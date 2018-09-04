@@ -5,8 +5,10 @@ import logging
 import os
 import re
 import sys
-from configparser import SafeConfigParser
 from html.parser import HTMLParser
+import hunspell
+import nltk
+import string
 
 logging.basicConfig()
 
@@ -32,6 +34,7 @@ class MLStripper(HTMLParser):
 
     def get_data(self):
         return ''.join(self.fed)
+
 
 class CheckStrings():
 
@@ -66,6 +69,7 @@ class CheckStrings():
 
         # Run checks
         self.quotesChecks()
+        self.checkSpelling()
 
     def extractStrings(self):
         '''Extract strings in files'''
@@ -92,14 +96,14 @@ class CheckStrings():
                     if isinstance(entity, parser.Junk):
                         continue
 
-                    string_id = u'{}:{}'.format(
+                    string_id = '{}:{}'.format(
                         file_name, entity)
                     if file_extension == '.ftl':
                         if entity.raw_val != '':
                             self.strings[string_id] = entity.raw_val
                         # Store attributes
                         for attribute in entity.attributes:
-                            attr_string_id = u'{0}:{1}.{2}'.format(
+                            attr_string_id = '{0}:{1}.{2}'.format(
                                 file_name, entity, attribute)
                             self.strings[attr_string_id] = attribute.raw_val
                     else:
@@ -129,6 +133,7 @@ class CheckStrings():
     def strip_tags(self, text):
         html_stripper = MLStripper()
         html_stripper.feed(text)
+
         return html_stripper.get_data()
 
     def quotesChecks(self):
@@ -139,7 +144,7 @@ class CheckStrings():
         file_name = os.path.join(
             self.script_path, os.path.pardir, 'exceptions', 'quotes.txt')
         with open(file_name, 'r') as f:
-            exceptions=[]
+            exceptions = []
             for l in f:
                 exceptions.append(l.rstrip())
 
@@ -151,7 +156,118 @@ class CheckStrings():
                 if not straight_quotes.findall(self.strip_tags(message)):
                     # Message is clean after stripping HTML
                     continue
-                print(u'{}: wrong quotes\n{}'.format(message_id, message))
+                print('{}: wrong quotes\n{}'.format(message_id, message))
+
+    def checkSpelling(self):
+        '''Check for spelling mistakes'''
+
+        # Load exceptions
+        exceptions = []
+        file_name = os.path.join(
+            self.script_path, os.path.pardir, 'exceptions', 'spelling.txt')
+        with open(file_name, 'r') as f:
+            exceptions = []
+            for line in f:
+                exceptions.append(line.rstrip())
+
+        # Load hunspell dictionaries
+        dictionary_path = os.path.join(
+            self.script_path, os.path.pardir, 'dictionaries')
+        spellchecker = hunspell.HunSpell(
+            os.path.join(dictionary_path, 'it_IT.dic'),
+            os.path.join(dictionary_path, 'it_IT.aff'),
+        )
+        # Add extra dictionary
+        # This doesn't seem to work, so doing a silly workaround for now
+        # https://github.com/blatinier/pyhunspell/issues/73
+        '''
+        spellchecker.add_dic(
+            os.path.join(dictionary_path, 'additional_words.dic'))
+        '''
+        with open(os.path.join(dictionary_path, 'additional_words.dic'), 'r') as f:
+            for line in f:
+                spellchecker.add(line.rstrip())
+
+        punctuation = list(string.punctuation)
+
+        placeables = {
+            '.ftl':
+                [
+                    # Message references, variables, terms
+                    re.compile(r'(?<!\{)\{\s*([\$|-]?[A-Za-z0-9._-]+)(?:[\[(]?[A-Za-z0-9_\-, :"]+[\])])*\s*\}'),
+                    # DATETIME()
+                    re.compile(r'\{\s*DATETIME\(.*\)\s*\}'),
+                    # Variants
+                    re.compile(r'\{\s*\$[a-zA-Z]+\s*->'),
+                ],
+            '.properties':
+                [
+                    re.compile(r'(?<!\{)\{\s*[A-Za-z0-9_-]+\s*\}'),
+                ],
+            '.dtd':
+                [
+                    re.compile(r'&([A-Za-z0-9\.]+);'),
+                ],
+        }
+
+        # Some files should be completely excluded
+        excluded_files = [
+            'browser/defines.inc',
+            'toolkit/toolkit/intl/regionNames.ftl',
+            'toolkit/toolkit/intl/languageNames.ftl',
+        ]
+
+        for message_id, message in self.strings.items():
+            filename, extension = os.path.splitext(message_id.split(':')[0])
+            if message_id.split(':')[0] in excluded_files:
+                continue
+            if message_id in exceptions:
+                continue
+            if extension == '.ftl' and '.style' in message_id:
+                continue
+            if not message:
+                continue
+
+            # Strip HTML
+            cleaned_message = self.strip_tags(message)
+
+            # Replace apostrophes and quotes
+            cleaned_message = cleaned_message.replace('’', '\'')
+            cleaned_message = cleaned_message.replace('“', ' ')
+            cleaned_message = cleaned_message.replace('”', ' ')
+
+            # Remove ellipsis, newlines
+            cleaned_message = cleaned_message.replace('…', '')
+            cleaned_message = cleaned_message.replace(r'\n', ' ')
+
+            # Replace other characters to reduce errors
+            cleaned_message = cleaned_message.replace('/', ' ')
+            cleaned_message = cleaned_message.replace('=', ' = ')
+
+            # Remove placeables from FTL and properties strings
+            if extension in placeables:
+                try:
+                    for pattern in placeables[extension]:
+                        cleaned_message = pattern.sub(
+                            ' ', cleaned_message)
+                except Exception as e:
+                    print('Error removing placeables')
+                    print(message_id)
+                    print(e)
+
+            # Tokenize sentence
+            tokens = nltk.word_tokenize(cleaned_message)
+            errors = []
+            for token in tokens:
+                if token not in punctuation and not spellchecker.spell(token):
+                    errors.append(token)
+
+            if errors:
+                print('{}: spelling error'.format(message_id))
+                for e in errors:
+                    print('Original: {}'.format(message))
+                    print('Cleaned: {}'.format(cleaned_message))
+                    print('  {}'.format(e))
 
 
 def main():
