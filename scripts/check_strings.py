@@ -86,7 +86,7 @@ class CheckStrings():
             file_parser = parser.getParser(file_extension)
             file_parser.readFile(file_path)
             try:
-                entities, map = file_parser.parse()
+                entities = file_parser.parse()
                 for entity in entities:
                     # Ignore Junk
                     if isinstance(entity, parser.Junk):
