@@ -1,0 +1,15 @@
+{
+    "excluded_files": [
+        "browser/defines.inc",
+        "browser/browser/preferences/fonts.ftl",
+        "toolkit/toolkit/intl/regionNames.ftl",
+        "toolkit/toolkit/intl/languageNames.ftl",
+        "browser/installer/override.properties",
+        "toolkit/chrome/global/charsetMenu.properties",
+        "dom/chrome/accessibility/AccessFu.properties"
+    ],
+    "excluded_strings": [
+        "browser/chrome/overrides/netError.dtd:brandDTD",
+        "toolkit/chrome/global/videocontrols.dtd:brandDTD"
+    ]
+}

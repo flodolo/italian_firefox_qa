@@ -1,4 +1,0 @@
-browser/browser/aboutLogins.ftl:about-logins-export-file-picker-default-filename
-browser/browser/aboutLogins.ftl:login-item-origin.placeholder
-browser/browser/aboutRobots.ftl:page-title
-toolkit/toolkit/main-window/findbar.ftl:findbar-match-diacritics.tooltiptext

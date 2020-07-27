@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
 import argparse
-import logging
 import os
+import json
 import re
 import sys
 from html.parser import HTMLParser
 import hunspell
 import nltk
 import string
-
-logging.basicConfig()
 
 # Import libraries
 try:
@@ -33,7 +31,7 @@ class MLStripper(HTMLParser):
         self.fed.append(d)
 
     def get_data(self):
-        return ''.join(self.fed)
+        return ' '.join(self.fed)
 
 
 class CheckStrings():
@@ -62,13 +60,17 @@ class CheckStrings():
         self.file_list = []
         self.strings = {}
         self.script_path = script_path
+        self.exceptions_path = os.path.join(
+            script_path, os.path.pardir, 'exceptions')
+        self.errors_path = os.path.join(
+            script_path, os.path.pardir, 'errors')
         self.repository_path = repository_path.rstrip(os.path.sep)
 
         # Extract strings
         self.extractStrings()
 
         # Run checks
-        self.quotesChecks()
+        self.checkQuotes()
         self.checkSpelling()
 
     def extractStrings(self):
@@ -136,13 +138,12 @@ class CheckStrings():
 
         return html_stripper.get_data()
 
-    def quotesChecks(self):
+    def checkQuotes(self):
         '''Check quotes'''
 
         # Load exceptions
         exceptions = []
-        file_name = os.path.join(
-            self.script_path, os.path.pardir, 'exceptions', 'quotes.txt')
+        file_name = os.path.join(self.exceptions_path, 'quotes.txt')
         with open(file_name, 'r') as f:
             exceptions = []
             for l in f:
@@ -161,14 +162,16 @@ class CheckStrings():
     def checkSpelling(self):
         '''Check for spelling mistakes'''
 
-        # Load exceptions
-        exceptions = []
-        file_name = os.path.join(
-            self.script_path, os.path.pardir, 'exceptions', 'spelling.txt')
-        with open(file_name, 'r') as f:
-            exceptions = []
-            for line in f:
-                exceptions.append(line.rstrip())
+        # Load exceptions and exclusions
+        exceptions_filename = os.path.join(
+            self.exceptions_path, 'spelling.json')
+        with open(exceptions_filename, 'r') as f:
+            exceptions = json.load(f)
+
+        with open(os.path.join(self.exceptions_path, 'spelling_exclusions.json'), 'r') as f:
+            exclusions = json.load(f)
+            excluded_files = tuple(exclusions['excluded_files'])
+            excluded_strings = exclusions['excluded_strings']
 
         # Load hunspell dictionaries
         dictionary_path = os.path.join(
@@ -184,11 +187,32 @@ class CheckStrings():
         spellchecker.add_dic(
             os.path.join(dictionary_path, 'additional_words.dic'))
         '''
+        added_words = []
         with open(os.path.join(dictionary_path, 'additional_words.dic'), 'r') as f:
             for line in f:
-                spellchecker.add(line.rstrip())
+                l = line.rstrip()
+                spellchecker.add(l)
+                added_words.append(l)
+        '''
+            Remove things that are not errors from the list of exceptions, e.g.
+            after a dictionary update.
+        '''
+        empty_keys = []
+        for message_id, errors in exceptions.items():
+            for error in errors[:]:
+                if error in added_words or spellchecker.spell(error):
+                    errors.remove(error)
+                if errors == []:
+                    empty_keys.append(message_id)
+        # Remove empty elements after clean-up
+        for id in empty_keys:
+            del(exceptions[id])
+        # Write back the updated file
+        with open(exceptions_filename, 'w') as f:
+            json.dump(exceptions, f, indent=2, sort_keys=True)
 
-        punctuation = list(string.punctuation)
+        punctuation = list(string.punctuation) + ['’', '“', '”']
+        stop_words = nltk.corpus.stopwords.words('italian')
 
         placeables = {
             '.ftl':
@@ -202,41 +226,45 @@ class CheckStrings():
                 ],
             '.properties':
                 [
-                    re.compile(r'(?<!\{)\{\s*[A-Za-z0-9_-]+\s*\}'),
+                    # printf
+                    re.compile(r'(%(?:[0-9]+\$){0,1}(?:[0-9].){0,1}([sS]))'),
+                    # webl10n in pdf.js
+                    re.compile(r'\{\[\s?plural\([a-zA-Z]+\)\s?\]\}|\{{1,2}\s?[a-zA-Z_-]+\s?\}{1,2}'),
                 ],
             '.dtd':
                 [
                     re.compile(r'&([A-Za-z0-9\.]+);'),
                 ],
+            '.ini':
+                [
+                    re.compile(r'%[A-Z_-]+%'),
+                ],
         }
 
-        # Some files should be completely excluded
-        excluded_files = [
-            'browser/defines.inc',
-            'toolkit/toolkit/intl/regionNames.ftl',
-            'toolkit/toolkit/intl/languageNames.ftl',
-        ]
-
+        all_errors = {}
         for message_id, message in self.strings.items():
             filename, extension = os.path.splitext(message_id.split(':')[0])
-            if message_id.split(':')[0] in excluded_files:
+
+            # Ignore excluded files and strings
+            if message_id.split(':')[0].startswith(excluded_files):
                 continue
-            if message_id in exceptions:
+            if message_id in excluded_strings:
                 continue
-            if extension == '.ftl' and '.style' in message_id:
+
+            # Ignore style attributes in fluent messages
+            if extension == '.ftl' and message_id.endswith('.style'):
                 continue
+
+            # Ignore empty messages
             if not message:
+                continue
+            if message == '{""}' or message == '{ "" }':
                 continue
 
             # Strip HTML
             cleaned_message = self.strip_tags(message)
 
-            # Replace apostrophes and quotes
-            cleaned_message = cleaned_message.replace('’', '\'')
-            cleaned_message = cleaned_message.replace('“', ' ')
-            cleaned_message = cleaned_message.replace('”', ' ')
-
-            # Remove ellipsis, newlines
+            # Remove ellipsis and newlines
             cleaned_message = cleaned_message.replace('…', '')
             cleaned_message = cleaned_message.replace(r'\n', ' ')
 
@@ -258,8 +286,13 @@ class CheckStrings():
             # Tokenize sentence
             tokens = nltk.word_tokenize(cleaned_message)
             errors = []
+            # Clean up tokens
+            tokens = [t for t in tokens if t not in punctuation]
+            tokens = [t for t in tokens if t.lower() not in stop_words]
             for token in tokens:
-                if token not in punctuation and not spellchecker.spell(token):
+                if message_id in exceptions and token in exceptions[message_id]:
+                    continue
+                if not spellchecker.spell(token):
                     errors.append(token)
 
             if errors:
@@ -268,6 +301,12 @@ class CheckStrings():
                     print('Original: {}'.format(message))
                     print('Cleaned: {}'.format(cleaned_message))
                     print('  {}'.format(e))
+                    print(nltk.word_tokenize(message))
+                    print(nltk.word_tokenize(cleaned_message))
+                all_errors[message_id] = errors
+
+        with open(os.path.join(self.errors_path, 'spelling.json'), 'w') as f:
+            json.dump(all_errors, f, indent=2, sort_keys=True)
 
 
 def main():
