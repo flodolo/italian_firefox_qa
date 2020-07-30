@@ -46,7 +46,7 @@ class CheckStrings():
         'suite'
     )
 
-    def __init__(self, script_path, repository_path):
+    def __init__(self, script_path, repository_path, verbose):
         '''Initialize object'''
 
         # Set defaults
@@ -58,6 +58,7 @@ class CheckStrings():
             '.properties',
         ]
         self.file_list = []
+        self.verbose = verbose
         self.strings = {}
         self.script_path = script_path
         self.exceptions_path = os.path.join(
@@ -257,6 +258,7 @@ class CheckStrings():
         }
 
         all_errors = {}
+        total_errors = 0
         misspelled_words = {}
         for message_id, message in self.strings.items():
             filename, extension = os.path.splitext(message_id.split(':')[0])
@@ -313,7 +315,6 @@ class CheckStrings():
                     if self.excludeToken(token):
                         continue
 
-                    # Ignore acronyms
                     errors.append(token)
                     if token not in misspelled_words:
                         misspelled_words[token] = 1
@@ -321,18 +322,22 @@ class CheckStrings():
                         misspelled_words[token] += 1
 
             if errors:
-                print('{}: spelling error'.format(message_id))
-                for e in errors:
-                    print('Original: {}'.format(message))
-                    print('Cleaned: {}'.format(cleaned_message))
-                    print('  {}'.format(e))
-                    print(nltk.word_tokenize(message))
-                    print(nltk.word_tokenize(cleaned_message))
+                total_errors += len(errors)
+                if self.verbose:
+                    print('{}: spelling error'.format(message_id))
+                    for e in errors:
+                        print('Original: {}'.format(message))
+                        print('Cleaned: {}'.format(cleaned_message))
+                        print('  {}'.format(e))
+                        print(nltk.word_tokenize(message))
+                        print(nltk.word_tokenize(cleaned_message))
                 all_errors[message_id] = errors
 
         with open(os.path.join(self.errors_path, 'spelling.json'), 'w') as f:
             json.dump(all_errors, f, indent=2, sort_keys=True)
 
+        print('\nTotal number of strings with errors: {}'.format(len(all_errors)))
+        print('\nTotal number of errors: {}'.format(total_errors))
         # Display mispelled words and their count, if above 4
         threshold = 4
         print('\nErrors and number of occurrences (only above {}):'.format(threshold))
@@ -343,11 +348,11 @@ class CheckStrings():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('repo_path', help='Path to locale files')
+    parser.add_argument('--verbose', action='store_true', help='Verbose output (e.g. tokens')
     args = parser.parse_args()
-
     CheckStrings(
         os.path.abspath(os.path.dirname(__file__)),
-        args.repo_path)
+        args.repo_path, args.verbose)
 
 
 if __name__ == '__main__':
