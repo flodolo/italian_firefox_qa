@@ -8,6 +8,10 @@
   "devtools/client/inspector.properties:inspectorImageDataUri.label": [
     "Data-URL"
   ],
+  "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext2": [
+    "flexbox",
+    "flexbox"
+  ],
   "devtools/client/markers.properties:marker.gcreason.description.EVICT_NURSERY": [
     "heap"
   ],

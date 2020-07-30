@@ -153,9 +153,6 @@
   "browser/browser/nsserrors.ftl:sec-error-extra-input": [
     "DER-encoded"
   ],
-  "browser/browser/nsserrors.ftl:sec-error-failed-to-encode-data": [
-    "l'encoder"
-  ],
   "browser/browser/nsserrors.ftl:sec-error-filing-key": [
     "refil"
   ],
@@ -973,25 +970,13 @@
   ],
   "devtools/client/inspector.properties:markupView.display.flex.tooltiptext2": [
     "flexbox",
-    "l'overlay",
     "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.flowRoot.tooltiptext": [
     "element"
   ],
-  "devtools/client/inspector.properties:markupView.display.grid.tooltiptext2": [
-    "l'overlay"
-  ],
   "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext": [
     "flexbox"
-  ],
-  "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext2": [
-    "flexbox",
-    "l'overlay",
-    "flexbox"
-  ],
-  "devtools/client/inspector.properties:markupView.display.inlineGrid.tooltiptext2": [
-    "l'overlay"
   ],
   "devtools/client/inspector.properties:markupView.event.tooltiptext": [
     "Listener"
@@ -1046,9 +1031,6 @@
   "devtools/client/markers.properties:marker.gcreason.description.DOM_UTILS": [
     "garbage",
     "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.EVICT_NURSERY": [
-    "sull'heap"
   ],
   "devtools/client/markers.properties:marker.gcreason.description.FULL_GC_TIMER": [
     "garbage",
