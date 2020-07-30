@@ -159,6 +159,19 @@ class CheckStrings():
                     continue
                 print('{}: wrong quotes\n{}'.format(message_id, message))
 
+    def excludeToken(self, token):
+        '''Exclude specific tokens after spellcheck'''
+
+        # Ignore DevTools accesskeys
+        if 'CmdOrCtrl' in token:
+            return True
+
+        # Ignore acronyms (all uppercase)
+        if token == token.upper():
+            return True
+
+        return False
+
     def checkSpelling(self):
         '''Check for spelling mistakes'''
 
@@ -211,7 +224,8 @@ class CheckStrings():
         with open(exceptions_filename, 'w') as f:
             json.dump(exceptions, f, indent=2, sort_keys=True)
 
-        punctuation = list(string.punctuation) + ['’', '“', '”']
+        punctuation = list(string.punctuation) + \
+            ['’', '“', '”', '--', '—', '×']
         stop_words = nltk.corpus.stopwords.words('italian')
 
         placeables = {
@@ -242,6 +256,7 @@ class CheckStrings():
         }
 
         all_errors = {}
+        misspelled_words = {}
         for message_id, message in self.strings.items():
             filename, extension = os.path.splitext(message_id.split(':')[0])
 
@@ -293,7 +308,16 @@ class CheckStrings():
                 if message_id in exceptions and token in exceptions[message_id]:
                     continue
                 if not spellchecker.spell(token):
+                    # It's misspelled, but I still need to remove a few outliers
+                    #if self.excludeToken:
+                    #    continue
+
+                    # Ignore acronyms
                     errors.append(token)
+                    if token not in misspelled_words:
+                        misspelled_words[token] = 1
+                    else:
+                        misspelled_words[token] += 1
 
             if errors:
                 print('{}: spelling error'.format(message_id))
@@ -308,6 +332,12 @@ class CheckStrings():
         with open(os.path.join(self.errors_path, 'spelling.json'), 'w') as f:
             json.dump(all_errors, f, indent=2, sort_keys=True)
 
+        # Display mispelled words and their count, if above 4
+        threshold = 4
+        print('\nErrors and number of occurrences (only above {}):'.format(threshold))
+        for k in sorted(misspelled_words, key=misspelled_words.get, reverse=True):
+            if misspelled_words[k] >= threshold:
+                print('{}: {}'.format(k, misspelled_words[k]))
 
 def main():
     parser = argparse.ArgumentParser()

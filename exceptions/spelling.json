@@ -20,12 +20,10 @@
   ],
   "browser/browser/aboutLogins.ftl:enable-password-sync-notification-message": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/aboutLogins.ftl:enable-password-sync-preferences-button.label": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/aboutLogins.ftl:login-item-origin.placeholder": [
@@ -33,12 +31,10 @@
   ],
   "browser/browser/aboutLogins.ftl:menu-menuitem-preferences": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/aboutPrivateBrowsing.ftl:about-private-browsing-search-banner-description": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/aboutRobots.ftl:page-title": [
@@ -115,12 +111,10 @@
   ],
   "browser/browser/menubar.ftl:menu-preferences.accesskey": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/menubar.ftl:menu-preferences.label": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/menubar.ftl:menu-view-full-screen.label": [
@@ -144,7 +138,6 @@
   ],
   "browser/browser/migration.ftl:import-from": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-rating.tooltiptext": [
@@ -186,12 +179,7 @@
     "signatureAlgorithm"
   ],
   "browser/browser/nsserrors.ftl:mozilla-pkix-error-v1-cert-used-as-ca": [
-    "X.509",
-    "anchor",
-    "X.509"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-bad-crl-dp-url": [
-    "CRL"
+    "anchor"
   ],
   "browser/browser/nsserrors.ftl:sec-error-bad-der": [
     "DER-encoded"
@@ -199,22 +187,15 @@
   "browser/browser/nsserrors.ftl:sec-error-bad-ldap-response": [
     "LDAP"
   ],
-  "browser/browser/nsserrors.ftl:sec-error-bad-nickname": [
-    "nickname"
-  ],
   "browser/browser/nsserrors.ftl:sec-error-bad-template": [
     "ASN.1",
     "template"
   ],
   "browser/browser/nsserrors.ftl:sec-error-baggage-not-created": [
-    "baggage",
-    "object"
+    "baggage"
   ],
   "browser/browser/nsserrors.ftl:sec-error-busy": [
     "NSS"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-cert-nickname-collision": [
-    "nickname"
   ],
   "browser/browser/nsserrors.ftl:sec-error-cert-usages-invalid": [
     "usages",
@@ -224,24 +205,6 @@
     "CKL",
     "CKL",
     "CKL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-already-exists": [
-    "CRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-bad-signature": [
-    "CRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-expired": [
-    "CRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-import-failed": [
-    "CRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-invalid": [
-    "CRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-crl-not-found": [
-    "CRL"
   ],
   "browser/browser/nsserrors.ftl:sec-error-crl-unknown-critical-extension": [
     "V2"
@@ -266,36 +229,16 @@
     "PCKS"
   ],
   "browser/browser/nsserrors.ftl:sec-error-invalid-policy-mapping": [
-    "Policy",
-    "mapping",
     "anypolicy"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-key-nickname-collision": [
-    "nickname"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-krl-bad-signature": [
-    "KRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-krl-expired": [
-    "KRL"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-krl-invalid": [
-    "KRL"
   ],
   "browser/browser/nsserrors.ftl:sec-error-libpkix-internal": [
     "libpkix"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-no-krl": [
-    "KRL"
   ],
   "browser/browser/nsserrors.ftl:sec-error-no-nodelock": [
     "nodelock"
   ],
   "browser/browser/nsserrors.ftl:sec-error-not-initialized": [
     "NSS"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-old-crl": [
-    "CRL"
   ],
   "browser/browser/nsserrors.ftl:sec-error-old-krl": [
     "KLR"
@@ -314,18 +257,8 @@
   "browser/browser/nsserrors.ftl:sec-error-pkcs11-general-error": [
     "CKR_GENERAL_ERROR"
   ],
-  "browser/browser/nsserrors.ftl:sec-error-pkcs12-cert-collision": [
-    "nickname"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-pkcs12-unable-to-locate-object-by-name": [
-    "nickname"
-  ],
-  "browser/browser/nsserrors.ftl:sec-error-pkcs12-unsupported-transport-mode": [
-    "integrity"
-  ],
   "browser/browser/nsserrors.ftl:sec-error-safe-not-created": [
-    "safe",
-    "object"
+    "safe"
   ],
   "browser/browser/nsserrors.ftl:sec-error-unsupported-message-type": [
     "CMS"
@@ -365,24 +298,15 @@
   "browser/browser/nsserrors.ftl:xp-sec-fortezza-bad-pin": [
     "Pin"
   ],
-  "browser/browser/pageInfo.ftl:general-meta-tags.value": [
-    "tag"
-  ],
   "browser/browser/pageInfo.ftl:general-quirks-mode.value": [
     "Quirks"
   ],
   "browser/browser/pageInfo.ftl:media-dimensions-scaled.value": [
-    "px",
     "\u00d7",
-    "px",
-    "px",
-    "\u00d7",
-    "px"
+    "\u00d7"
   ],
   "browser/browser/pageInfo.ftl:media-dimensions.value": [
-    "px",
-    "\u00d7",
-    "px"
+    "\u00d7"
   ],
   "browser/browser/pageInfo.ftl:security-visits-number": [
     "one",
@@ -412,18 +336,11 @@
   "browser/browser/policies/policies-descriptions.ftl:policy-DNSOverHTTPS": [
     "over"
   ],
-  "browser/browser/policies/policies-descriptions.ftl:policy-DisableDefaultBrowserAgent": [
-    "agent"
-  ],
   "browser/browser/policies/policies-descriptions.ftl:policy-DisableProfileRefresh": [
     "support"
   ],
   "browser/browser/policies/policies-descriptions.ftl:policy-DisableSafeMode": [
     "Maiusc"
-  ],
-  "browser/browser/policies/policies-descriptions.ftl:policy-EncryptedMediaExtensions": [
-    "Encrypted",
-    "Extensions"
   ],
   "browser/browser/policies/policies-descriptions.ftl:policy-LegacySameSiteCookieBehaviorEnabled": [
     "legacy"
@@ -480,12 +397,10 @@
     "PLATFORM",
     "macos",
     "macOS",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:containers-back-button.aria-label": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:containers-back-link": [
@@ -533,47 +448,38 @@
   ],
   "browser/browser/preferences/preferences.ftl:pref-page-title": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:pref-page.title": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:search-input-box.placeholder": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:search-results-empty-message": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-message": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.accesskey": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.label": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:sync-currently-syncing-prefs": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:sync-engine-prefs.label": [
     "PLATFORM",
-    "windows",
     "other"
   ],
   "browser/browser/preferences/preferences.ftl:use-current-pages.label": [
@@ -728,14 +634,8 @@
     "wiki.mozilla.org",
     "Upcoming_Distrust_Actions"
   ],
-  "browser/chrome/browser/browser.properties:decoder.noCodecs.message": [
-    "Feature"
-  ],
   "browser/chrome/browser/browser.properties:decoder.noCodecsLinux.message": [
     "codec"
-  ],
-  "browser/chrome/browser/browser.properties:decoder.noHWAcceleration.message": [
-    "Feature"
   ],
   "browser/chrome/browser/browser.properties:decoder.noPulseAudio.message": [
     "PulseAudio"
@@ -791,9 +691,6 @@
   "browser/chrome/overrides/appstrings.properties:sslv3Used": [
     "SSLv3"
   ],
-  "browser/chrome/overrides/appstrings.properties:xfoBlocked": [
-    "X-Frame-Options"
-  ],
   "browser/chrome/overrides/netError.dtd:inadequateSecurityError.longDesc": [
     "NS_ERROR_NET_INADEQUATE_SECURITY"
   ],
@@ -802,9 +699,6 @@
   ],
   "browser/chrome/overrides/netError.dtd:unknownSocketType.longDesc": [
     "Personal"
-  ],
-  "browser/chrome/overrides/netError.dtd:xfoBlocked.longDesc": [
-    "X-Frame-Options"
   ],
   "browser/extensions/formautofill/formautofill.properties:autocompleteFooterOptionOSXShort2": [
     "autom"
@@ -1114,18 +1008,8 @@
   "devtools/client/aboutdebugging.properties:webExtTip": [
     "web-ext"
   ],
-  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-focus-visible": [
-    "focusable"
-  ],
-  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-focusable": [
-    "focusable"
-  ],
   "devtools/client/accessibility.ftl:accessibility-keyboard-issue-mouse-only": [
-    "clickable",
-    "focusable"
-  ],
-  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-semantics": [
-    "focusable"
+    "clickable"
   ],
   "devtools/client/accessibility.ftl:accessibility-keyboard-issue-tabindex": [
     "tabindex"
@@ -1185,9 +1069,6 @@
   ],
   "devtools/client/animationinspector.properties:player.playbackRateLabel": [
     "\u00d7"
-  ],
-  "devtools/client/animationinspector.properties:player.runningOnCompositorTooltip": [
-    "compositor"
   ],
   "devtools/client/app-manager.properties:validator.missIconMarketplace2": [
     "Marketplace"
@@ -1267,26 +1148,11 @@
   "devtools/client/debugger.properties:overriddenTooltip": [
     "override"
   ],
-  "devtools/client/debugger.properties:pauseOnAnyXHR": [
-    "XHR"
-  ],
   "devtools/client/debugger.properties:projectTextSearch.key": [
     "CmdOrCtrl+Shift+F"
   ],
-  "devtools/client/debugger.properties:scopes.helpTooltip.label": [
-    "mapping"
-  ],
-  "devtools/client/debugger.properties:scopes.map.label": [
-    "mapping"
-  ],
   "devtools/client/debugger.properties:sealedTooltip": [
     "sealed"
-  ],
-  "devtools/client/debugger.properties:settings.toggleSourceMaps.label": [
-    "Mapping"
-  ],
-  "devtools/client/debugger.properties:settings.toggleSourceMaps.tooltip": [
-    "mapping"
   ],
   "devtools/client/debugger.properties:sourceSearch.search.again.key2": [
     "CmdOrCtrl+G"
@@ -1342,20 +1208,8 @@
   "devtools/client/debugger.properties:watchpoints.removeWatchpointTooltip": [
     "watchpoint"
   ],
-  "devtools/client/debugger.properties:whyPaused.XHR": [
-    "XMLHttpRequest"
-  ],
   "devtools/client/debugger.properties:whyPaused.pauseOnDOMEvents": [
     "listener"
-  ],
-  "devtools/client/debugger.properties:whyPaused.xhr": [
-    "XMLHttpRequest"
-  ],
-  "devtools/client/debugger.properties:xhrBreakpoints.header": [
-    "XHR"
-  ],
-  "devtools/client/debugger.properties:xhrBreakpoints.label": [
-    "XHR"
   ],
   "devtools/client/graphs.properties:graphs.label.minimum": [
     "min"
@@ -1374,45 +1228,29 @@
   "devtools/client/inspector.properties:inspector.searchHTML.key": [
     "CmdOrCtrl+F"
   ],
-  "devtools/client/inspector.properties:inspectorCopyXPath.label": [
-    "XPath"
-  ],
   "devtools/client/inspector.properties:markupView.display.flex.tooltiptext": [
-    "block",
     "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.flex.tooltiptext2": [
-    "block",
     "flexbox",
     "l'overlay",
     "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.flowRoot.tooltiptext": [
-    "block",
     "element"
   ],
-  "devtools/client/inspector.properties:markupView.display.grid.tooltiptext": [
-    "block"
-  ],
   "devtools/client/inspector.properties:markupView.display.grid.tooltiptext2": [
-    "block",
     "l'overlay"
   ],
   "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext": [
-    "inline",
     "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext2": [
-    "inline",
     "flexbox",
     "l'overlay",
     "flexbox"
   ],
-  "devtools/client/inspector.properties:markupView.display.inlineGrid.tooltiptext": [
-    "inline"
-  ],
   "devtools/client/inspector.properties:markupView.display.inlineGrid.tooltiptext2": [
-    "inline",
     "l'overlay"
   ],
   "devtools/client/inspector.properties:markupView.edit.key": [
@@ -1424,29 +1262,8 @@
   "devtools/client/inspector.properties:markupView.scrollableBadge.tooltip": [
     "overflow"
   ],
-  "devtools/client/jit-optimizations.properties:jit.title": [
-    "JIT"
-  ],
-  "devtools/client/layout.properties:flexbox.backButtonLabel": [
-    "flex"
-  ],
-  "devtools/client/layout.properties:flexbox.flexContainer": [
-    "flex"
-  ],
-  "devtools/client/layout.properties:flexbox.flexItemOf": [
-    "flex"
-  ],
-  "devtools/client/layout.properties:flexbox.flexItems": [
-    "flex"
-  ],
   "devtools/client/layout.properties:flexbox.header": [
     "Flexbox"
-  ],
-  "devtools/client/layout.properties:flexbox.noFlexItems": [
-    "flex"
-  ],
-  "devtools/client/layout.properties:flexbox.noFlexboxeOnThisPage": [
-    "flex"
   ],
   "devtools/client/layout.properties:flexbox.togglesFlexboxHighlighter2": [
     "flexbox"
@@ -1592,9 +1409,6 @@
   "devtools/client/markers.properties:marker.label.javascript.promiseInit": [
     "Init"
   ],
-  "devtools/client/markers.properties:marker.label.javascript.scriptElement": [
-    "Tag"
-  ],
   "devtools/client/markers.properties:marker.label.messagePort": [
     "MessagePort"
   ],
@@ -1603,9 +1417,6 @@
   ],
   "devtools/client/markers.properties:marker.label.paint": [
     "Paint"
-  ],
-  "devtools/client/markers.properties:marker.label.timestamp": [
-    "Timestamp"
   ],
   "devtools/client/markers.properties:marker.messagePort.deserializeData": [
     "Deserializza"
@@ -1628,9 +1439,6 @@
   "devtools/client/memory.properties:censusDisplays.internalType.tooltip": [
     "C++"
   ],
-  "devtools/client/memory.properties:censusDisplays.objectClass.tooltip": [
-    "Object"
-  ],
   "devtools/client/memory.properties:dominatorTree.state.fetching.full": [
     "retained"
   ],
@@ -1647,9 +1455,6 @@
     "Garbage",
     "Collector"
   ],
-  "devtools/client/memory.properties:snapshot.state.saving-census.full": [
-    "report"
-  ],
   "devtools/client/memory.properties:toolbar.pop-view": [
     "\u2190"
   ],
@@ -1659,20 +1464,11 @@
   "devtools/client/memory.properties:tree-item.rootlist": [
     "GC"
   ],
-  "devtools/client/menus.properties:webide.label": [
-    "WebIDE"
-  ],
   "devtools/client/netmonitor.properties:certmgr.certdetail.cn": [
     "CN"
   ],
   "devtools/client/netmonitor.properties:certmgr.certdetail.ou": [
     "OU"
-  ],
-  "devtools/client/netmonitor.properties:certmgr.certdetail.sha1fingerprint": [
-    "SHA1"
-  ],
-  "devtools/client/netmonitor.properties:certmgr.certdetail.sha256fingerprint": [
-    "SHA-256"
   ],
   "devtools/client/netmonitor.properties:certmgr.certificateTransparency.status.notDiverseSCTS": [
     "SCT"
