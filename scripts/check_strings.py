@@ -46,7 +46,7 @@ class CheckStrings():
         'suite'
     )
 
-    def __init__(self, script_path, repository_path):
+    def __init__(self, script_path, repository_path, verbose):
         '''Initialize object'''
 
         # Set defaults
@@ -58,6 +58,7 @@ class CheckStrings():
             '.properties',
         ]
         self.file_list = []
+        self.verbose = verbose
         self.strings = {}
         self.script_path = script_path
         self.exceptions_path = os.path.join(
@@ -159,6 +160,20 @@ class CheckStrings():
                     continue
                 print('{}: wrong quotes\n{}'.format(message_id, message))
 
+    def excludeToken(self, token):
+        '''Exclude specific tokens after spellcheck'''
+
+        # Ignore DevTools accesskeys
+        if 'CmdOrCtrl' in token:
+            return True
+
+        # Ignore acronyms (all uppercase) and token made up only by
+        # unicode characters, or punctuation
+        if token == token.upper():
+            return True
+
+        return False
+
     def checkSpelling(self):
         '''Check for spelling mistakes'''
 
@@ -193,6 +208,7 @@ class CheckStrings():
                 l = line.rstrip()
                 spellchecker.add(l)
                 added_words.append(l)
+
         '''
             Remove things that are not errors from the list of exceptions, e.g.
             after a dictionary update.
@@ -200,7 +216,7 @@ class CheckStrings():
         empty_keys = []
         for message_id, errors in exceptions.items():
             for error in errors[:]:
-                if error in added_words or spellchecker.spell(error):
+                if error in added_words or spellchecker.spell(error) or self.excludeToken(error):
                     errors.remove(error)
                 if errors == []:
                     empty_keys.append(message_id)
@@ -242,6 +258,8 @@ class CheckStrings():
         }
 
         all_errors = {}
+        total_errors = 0
+        misspelled_words = {}
         for message_id, message in self.strings.items():
             filename, extension = os.path.splitext(message_id.split(':')[0])
 
@@ -293,30 +311,48 @@ class CheckStrings():
                 if message_id in exceptions and token in exceptions[message_id]:
                     continue
                 if not spellchecker.spell(token):
+                    # It's misspelled, but I still need to remove a few outliers
+                    if self.excludeToken(token):
+                        continue
+
                     errors.append(token)
+                    if token not in misspelled_words:
+                        misspelled_words[token] = 1
+                    else:
+                        misspelled_words[token] += 1
 
             if errors:
-                print('{}: spelling error'.format(message_id))
-                for e in errors:
-                    print('Original: {}'.format(message))
-                    print('Cleaned: {}'.format(cleaned_message))
-                    print('  {}'.format(e))
-                    print(nltk.word_tokenize(message))
-                    print(nltk.word_tokenize(cleaned_message))
+                total_errors += len(errors)
+                if self.verbose:
+                    print('{}: spelling error'.format(message_id))
+                    for e in errors:
+                        print('Original: {}'.format(message))
+                        print('Cleaned: {}'.format(cleaned_message))
+                        print('  {}'.format(e))
+                        print(nltk.word_tokenize(message))
+                        print(nltk.word_tokenize(cleaned_message))
                 all_errors[message_id] = errors
 
         with open(os.path.join(self.errors_path, 'spelling.json'), 'w') as f:
             json.dump(all_errors, f, indent=2, sort_keys=True)
 
+        print('\nTotal number of strings with errors: {}'.format(len(all_errors)))
+        print('\nTotal number of errors: {}'.format(total_errors))
+        # Display mispelled words and their count, if above 4
+        threshold = 4
+        print('\nErrors and number of occurrences (only above {}):'.format(threshold))
+        for k in sorted(misspelled_words, key=misspelled_words.get, reverse=True):
+            if misspelled_words[k] >= threshold:
+                print('{}: {}'.format(k, misspelled_words[k]))
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('repo_path', help='Path to locale files')
+    parser.add_argument('--verbose', action='store_true', help='Verbose output (e.g. tokens')
     args = parser.parse_args()
-
     CheckStrings(
         os.path.abspath(os.path.dirname(__file__)),
-        args.repo_path)
+        args.repo_path, args.verbose)
 
 
 if __name__ == '__main__':
