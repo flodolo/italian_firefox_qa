@@ -1105,10 +1105,6 @@
     "subscript",
     "superscript"
   ],
-  "dom/chrome/netError.dtd:deniedPortAccess.longDesc": [
-    "example.com:80",
-    "example.com"
-  ],
   "dom/chrome/netError.dtd:dnsNotFound.longDesc": [
     "ww"
   ],
@@ -1457,9 +1453,6 @@
   "mobile/overrides/netError.dtd:dnsNotFound.longDesc4": [
     "ww",
     "wireless"
-  ],
-  "mobile/overrides/netError.dtd:malformedURI.longDesc2": [
-    "www.example.com"
   ],
   "mobile/overrides/netError.dtd:proxyResolveFailure.longDesc3": [
     "wireless"
@@ -1926,43 +1919,15 @@
   "toolkit/crashreporter/aboutcrashes.ftl:no-config-label": [
     "breakpad.reportURL"
   ],
-  "toolkit/toolkit/about/aboutAddons.ftl:addon-detail-reviews-link": [
-    "one",
-    "other"
-  ],
   "toolkit/toolkit/about/aboutAddons.ftl:addons-heading-search-input.placeholder": [
     "addons.mozilla.org"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.accesskey": [
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.label": [
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.accesskey": [
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.label": [
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.tooltiptext": [
-    "other"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:five-star-rating.title": [
     "rating",
     "maximumFractionDigits"
   ],
-  "toolkit/toolkit/about/aboutAddons.ftl:preferences": [
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:preferences-addon-button": [
-    "other"
-  ],
   "toolkit/toolkit/about/aboutAddons.ftl:search-header.placeholder": [
     "addons.mozilla.org"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:sidebar-preferences-button-title.title": [
-    "other"
   ],
   "toolkit/toolkit/about/aboutCompat.ftl:text-disabled-in-about-config": [
     "config"
@@ -2006,10 +1971,6 @@
   ],
   "toolkit/toolkit/about/aboutPerformance.ftl:type-tracker": [
     "Tracker"
-  ],
-  "toolkit/toolkit/about/aboutProfiles.ftl:profiles-opendir": [
-    "macos",
-    "other"
   ],
   "toolkit/toolkit/about/aboutRights.ftl:rights-intro": [
     "Source"
@@ -2060,18 +2021,6 @@
   "toolkit/toolkit/about/aboutSupport.ftl:content-uses-tiling": [
     "Tiling"
   ],
-  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-days": [
-    "one",
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-hours": [
-    "one",
-    "other"
-  ],
-  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-minutes": [
-    "one",
-    "other"
-  ],
   "toolkit/toolkit/about/aboutSupport.ftl:effective-content-sandbox-level": [
     "process"
   ],
@@ -2103,26 +2052,14 @@
     "Main",
     "Painting"
   ],
-  "toolkit/toolkit/about/aboutSupport.ftl:pending-reports": [
-    "one",
-    "other"
-  ],
   "toolkit/toolkit/about/aboutSupport.ftl:place-database-title": [
     "Places"
-  ],
-  "toolkit/toolkit/about/aboutSupport.ftl:report-crash-for-days": [
-    "one",
-    "other"
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:sandbox-sys-call-number": [
     "Syscall"
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:security-software-antispyware": [
     "Antispyware"
-  ],
-  "toolkit/toolkit/about/aboutSupport.ftl:show-dir-label": [
-    "macos",
-    "other"
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:startup-cache-title": [
     "startup"
@@ -2155,10 +2092,6 @@
   "toolkit/toolkit/about/aboutTelemetry.ftl:about-telemetry-data-type": [
     "prerelease",
     "pre-release"
-  ],
-  "toolkit/toolkit/about/aboutTelemetry.ftl:about-telemetry-histogram-stats": [
-    "one",
-    "other"
   ],
   "toolkit/toolkit/about/aboutTelemetry.ftl:about-telemetry-origin-section": [
     "Origin"
@@ -2209,10 +2142,6 @@
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-avif-description": [
     "Image"
-  ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-cookie-samesite-schemeful-description": [
-    "example.com",
-    "example.com"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-constructable-stylesheets-description": [
     "CSSStyleSheet",
@@ -2269,24 +2198,5 @@
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-web-gpu2.label": [
     "WebGPU"
-  ],
-  "toolkit/toolkit/global/createProfileWizard.ftl:create-profile-first-page-header": [
-    "macos",
-    "other"
-  ],
-  "toolkit/toolkit/global/createProfileWizard.ftl:create-profile-last-page-header": [
-    "macos",
-    "other"
-  ],
-  "toolkit/toolkit/global/createProfileWizard.ftl:profile-creation-explanation-4": [
-    "macos",
-    "other"
-  ],
-  "toolkit/toolkit/main-window/findbar.ftl:findbar-match-diacritics.tooltiptext": [
-    "caffe"
-  ],
-  "toolkit/toolkit/printing/printUI.ftl:printui-sheets-count": [
-    "one",
-    "other"
   ]
 }

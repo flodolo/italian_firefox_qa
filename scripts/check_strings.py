@@ -168,6 +168,10 @@ class CheckStrings():
         if token == token.upper():
             return True
 
+        # Ignore example.com strings
+        if 'example.com' in token:
+            return True
+
         # Ignore DevTools accesskeys
         if any(k in token for k in ['Alt+', 'Cmd+', 'Ctrl+']):
             return True

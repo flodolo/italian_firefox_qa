@@ -19,9 +19,6 @@
   "browser/browser/aboutLogins.ftl:enable-password-sync-preferences-button.label": [
     "other"
   ],
-  "browser/browser/aboutLogins.ftl:login-item-origin.placeholder": [
-    "www.example.com"
-  ],
   "browser/browser/aboutLogins.ftl:menu-menuitem-preferences": [
     "other"
   ],
@@ -1112,5 +1109,84 @@
   ],
   "devtools/client/netmonitor.properties:jsonpScopeName": [
     "callback"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:addon-detail-reviews-link": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.accesskey": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.label": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.accesskey": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.label": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.tooltiptext": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:preferences": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:preferences-addon-button": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutAddons.ftl:sidebar-preferences-button-title.title": [
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutProfiles.ftl:profiles-opendir": [
+    "macos",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-days": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-hours": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:crashes-time-minutes": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:pending-reports": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:report-crash-for-days": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:show-dir-label": [
+    "macos",
+    "other"
+  ],
+  "toolkit/toolkit/about/aboutTelemetry.ftl:about-telemetry-histogram-stats": [
+    "one",
+    "other"
+  ],
+  "toolkit/toolkit/global/createProfileWizard.ftl:create-profile-first-page-header": [
+    "macos",
+    "other"
+  ],
+  "toolkit/toolkit/global/createProfileWizard.ftl:create-profile-last-page-header": [
+    "macos",
+    "other"
+  ],
+  "toolkit/toolkit/global/createProfileWizard.ftl:profile-creation-explanation-4": [
+    "macos",
+    "other"
+  ],
+  "toolkit/toolkit/main-window/findbar.ftl:findbar-match-diacritics.tooltiptext": [
+    "caffe"
+  ],
+  "toolkit/toolkit/printing/printUI.ftl:printui-sheets-count": [
+    "one",
+    "other"
   ]
 }
