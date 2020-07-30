@@ -240,6 +240,7 @@ class CheckStrings():
 
         punctuation = list(string.punctuation) + ['’', '“', '”']
         stop_words = nltk.corpus.stopwords.words('italian')
+        stop_words += ['quest', 'qualcos']
 
         placeables = {
             '.ftl':
