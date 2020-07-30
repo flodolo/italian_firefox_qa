@@ -151,6 +151,8 @@ class CheckStrings():
                 exceptions.append(l.rstrip())
 
         straight_quotes = re.compile(r'\'|"')
+
+        all_errors = []
         for message_id, message in self.strings.items():
             if message_id in exceptions:
                 continue
@@ -158,7 +160,12 @@ class CheckStrings():
                 if not straight_quotes.findall(self.strip_tags(message)):
                     # Message is clean after stripping HTML
                     continue
-                print('{}: wrong quotes\n{}'.format(message_id, message))
+                all_errors.append(message_id)
+                if self.verbose:
+                    print('{}: wrong quotes\n{}'.format(message_id, message))
+
+        with open(os.path.join(self.errors_path, 'quotes.json'), 'w') as f:
+            json.dump(all_errors, f, indent=2, sort_keys=True)
 
     def excludeToken(self, token):
         '''Exclude specific tokens after spellcheck'''

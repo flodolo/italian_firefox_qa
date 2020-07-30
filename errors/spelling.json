@@ -1324,9 +1324,6 @@
     "datareporting_notification_title",
     "datareporting_notification_action_long"
   ],
-  "mobile/android/base/android_strings.dtd:firstrun_privacy_subtext": [
-    "navigaziona"
-  ],
   "mobile/android/base/android_strings.dtd:firstrun_readerview_subtext": [
     "\\u2014"
   ],
