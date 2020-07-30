@@ -166,7 +166,8 @@ class CheckStrings():
         if 'CmdOrCtrl' in token:
             return True
 
-        # Ignore acronyms (all uppercase)
+        # Ignore acronyms (all uppercase) and token made up only by
+        # unicode characters, or punctuation
         if token == token.upper():
             return True
 
@@ -206,6 +207,7 @@ class CheckStrings():
                 l = line.rstrip()
                 spellchecker.add(l)
                 added_words.append(l)
+
         '''
             Remove things that are not errors from the list of exceptions, e.g.
             after a dictionary update.
@@ -213,7 +215,7 @@ class CheckStrings():
         empty_keys = []
         for message_id, errors in exceptions.items():
             for error in errors[:]:
-                if error in added_words or spellchecker.spell(error):
+                if error in added_words or spellchecker.spell(error) or self.excludeToken(error):
                     errors.remove(error)
                 if errors == []:
                     empty_keys.append(message_id)
@@ -224,8 +226,7 @@ class CheckStrings():
         with open(exceptions_filename, 'w') as f:
             json.dump(exceptions, f, indent=2, sort_keys=True)
 
-        punctuation = list(string.punctuation) + \
-            ['’', '“', '”', '--', '—', '×']
+        punctuation = list(string.punctuation) + ['’', '“', '”']
         stop_words = nltk.corpus.stopwords.words('italian')
 
         placeables = {
@@ -309,8 +310,8 @@ class CheckStrings():
                     continue
                 if not spellchecker.spell(token):
                     # It's misspelled, but I still need to remove a few outliers
-                    #if self.excludeToken:
-                    #    continue
+                    if self.excludeToken(token):
+                        continue
 
                     # Ignore acronyms
                     errors.append(token)
