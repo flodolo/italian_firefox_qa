@@ -1,0 +1,1691 @@
+{
+  "browser/browser/aboutDialog.ftl:update-downloading": [
+    "\u2014"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-confirm-export-dialog-message": [
+    "Password123"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-export-file-picker-csv-filter-title": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-export-file-picker-default-filename": [
+    "credenziali.csv"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-import-file-picker-csv-filter-title": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:enable-password-sync-notification-message": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:enable-password-sync-preferences-button.label": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:login-item-origin.placeholder": [
+    "www.example.com"
+  ],
+  "browser/browser/aboutLogins.ftl:menu-menuitem-preferences": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/aboutPrivateBrowsing.ftl:about-private-browsing-search-banner-description": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/aboutRobots.ftl:page-title": [
+    "Gort",
+    "Klaatu",
+    "barada",
+    "nikto"
+  ],
+  "browser/browser/allTabsMenu.ftl:all-tabs-menu-undo-close-tabs.label": [
+    "other"
+  ],
+  "browser/browser/branding/sync-brand.ftl:-fxaccount-brand-name": [
+    "lowercase",
+    "uppercase"
+  ],
+  "browser/browser/browser.ftl:enable-devtools-popup-description": [
+    "F12"
+  ],
+  "browser/browser/browserContext.ftl:main-context-menu-media-play-speed-fast.label": [
+    "1.25\u00d7"
+  ],
+  "browser/browser/browserContext.ftl:main-context-menu-media-play-speed-faster.label": [
+    "1.5\u00d7"
+  ],
+  "browser/browser/browserContext.ftl:main-context-menu-media-play-speed-fastest.label": [
+    "2\u00d7"
+  ],
+  "browser/browser/browserContext.ftl:main-context-menu-media-play-speed-slow.label": [
+    "0.5\u00d7"
+  ],
+  "browser/browser/browserContext.ftl:navbar-tooltip-instruction.value": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/browserSets.ftl:bookmark-show-all-shortcut.key": [
+    "PLATFORM",
+    "linux",
+    "other"
+  ],
+  "browser/browser/browserSets.ftl:downloads-shortcut.key": [
+    "PLATFORM",
+    "linux",
+    "other"
+  ],
+  "browser/browser/browserSets.ftl:reader-mode-toggle-shortcut-windows.keycode": [
+    "VK_F9"
+  ],
+  "browser/browser/browserSets.ftl:search-find-again-shortcut-alt.keycode": [
+    "VK_F3"
+  ],
+  "browser/browser/browserSets.ftl:search-focus-shortcut-alt.key": [
+    "PLATFORM",
+    "linux",
+    "other"
+  ],
+  "browser/browser/downloads.ftl:downloads-cmd-show-button.tooltiptext": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/downloads.ftl:downloads-cmd-show-description.value": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/downloads.ftl:downloads-cmd-show-panel.aria-label": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/menubar.ftl:menu-file-new-window.label": [
+    "finestra\u00ad"
+  ],
+  "browser/browser/menubar.ftl:menu-preferences.accesskey": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/menubar.ftl:menu-preferences.label": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/menubar.ftl:menu-view-full-screen.label": [
+    "intero\u00ad"
+  ],
+  "browser/browser/migration.ftl:browser-data-bookmarks-checkbox.label": [
+    "ie",
+    "edge",
+    "other"
+  ],
+  "browser/browser/migration.ftl:browser-data-bookmarks-label.value": [
+    "ie",
+    "edge",
+    "other"
+  ],
+  "browser/browser/migration.ftl:browser-data-history-checkbox.label": [
+    "other"
+  ],
+  "browser/browser/migration.ftl:browser-data-history-label.value": [
+    "other"
+  ],
+  "browser/browser/migration.ftl:import-from": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-rating.tooltiptext": [
+    "one",
+    "other"
+  ],
+  "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-total-users": [
+    "one",
+    "other"
+  ],
+  "browser/browser/newtab/asrouter.ftl:cfr-whatsnew-fingerprinter-counter-header": [
+    "one",
+    "other"
+  ],
+  "browser/browser/newtab/asrouter.ftl:cfr-whatsnew-tracking-blocked-title": [
+    "one",
+    "other"
+  ],
+  "browser/browser/newtab/newtab.ftl:newtab-label-sponsored": [
+    "\u00b7"
+  ],
+  "browser/browser/newtab/newtab.ftl:newtab-menu-show-file": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/newtab/onboarding.ftl:onboarding-screenshots-title": [
+    "Screenshot"
+  ],
+  "browser/browser/nsserrors.ftl:mozilla-pkix-error-key-pinning-failure": [
+    "key",
+    "pinning",
+    "pinset",
+    "key",
+    "pinning"
+  ],
+  "browser/browser/nsserrors.ftl:mozilla-pkix-error-signature-algorithm-mismatch": [
+    "signature",
+    "signatureAlgorithm"
+  ],
+  "browser/browser/nsserrors.ftl:mozilla-pkix-error-v1-cert-used-as-ca": [
+    "X.509",
+    "anchor",
+    "X.509"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-bad-crl-dp-url": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-bad-der": [
+    "DER-encoded"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-bad-ldap-response": [
+    "LDAP"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-bad-nickname": [
+    "nickname"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-bad-template": [
+    "ASN.1",
+    "template"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-baggage-not-created": [
+    "baggage",
+    "object"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-busy": [
+    "NSS"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-cert-nickname-collision": [
+    "nickname"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-cert-usages-invalid": [
+    "usages",
+    "field"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-ckl-conflict": [
+    "CKL",
+    "CKL",
+    "CKL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-already-exists": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-bad-signature": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-expired": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-import-failed": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-invalid": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-not-found": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-unknown-critical-extension": [
+    "V2"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-crl-v1-critical-extension": [
+    "V1"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-digest-not-found": [
+    "CMS"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-extra-input": [
+    "DER-encoded"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-failed-to-encode-data": [
+    "l'encoder",
+    "ASN1"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-filing-key": [
+    "refil"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-incompatible-pkcs11": [
+    "PCKS"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-invalid-policy-mapping": [
+    "Policy",
+    "mapping",
+    "anypolicy"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-key-nickname-collision": [
+    "nickname"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-krl-bad-signature": [
+    "KRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-krl-expired": [
+    "KRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-krl-invalid": [
+    "KRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-libpkix-internal": [
+    "libpkix"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-no-krl": [
+    "KRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-no-nodelock": [
+    "nodelock"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-not-initialized": [
+    "NSS"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-old-crl": [
+    "CRL"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-old-krl": [
+    "KLR"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-path-len-constraint-invalid": [
+    "path",
+    "length",
+    "constraint"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs11-device-error": [
+    "CKR_DEVICE_ERROR"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs11-function-failed": [
+    "CKR_FUNCTION_FAILED"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs11-general-error": [
+    "CKR_GENERAL_ERROR"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs12-cert-collision": [
+    "nickname"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs12-unable-to-locate-object-by-name": [
+    "nickname"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-pkcs12-unsupported-transport-mode": [
+    "integrity"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-safe-not-created": [
+    "safe",
+    "object"
+  ],
+  "browser/browser/nsserrors.ftl:sec-error-unsupported-message-type": [
+    "CMS"
+  ],
+  "browser/browser/nsserrors.ftl:sec-internal-only": [
+    "**Modulo",
+    "interno**"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-missing-extended-master-secret": [
+    "correct",
+    "extended_master_secret"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-next-protocol-no-callback": [
+    "next",
+    "protocol",
+    "negotiation",
+    "callback"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-next-protocol-no-protocol": [
+    "ALPN"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-rx-short-dtls-read": [
+    "DTLS"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-unexpected-extended-master-secret": [
+    "extended_master_secret"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-unsupported-extension-alert": [
+    "hello"
+  ],
+  "browser/browser/nsserrors.ftl:xp-java-cert-not-exists-error": [
+    "principal"
+  ],
+  "browser/browser/nsserrors.ftl:xp-java-remove-principal-error": [
+    "principal"
+  ],
+  "browser/browser/nsserrors.ftl:xp-sec-fortezza-bad-pin": [
+    "Pin"
+  ],
+  "browser/browser/pageInfo.ftl:general-meta-tags.value": [
+    "tag"
+  ],
+  "browser/browser/pageInfo.ftl:general-quirks-mode.value": [
+    "Quirks"
+  ],
+  "browser/browser/pageInfo.ftl:media-dimensions-scaled.value": [
+    "px",
+    "\u00d7",
+    "px",
+    "px",
+    "\u00d7",
+    "px"
+  ],
+  "browser/browser/pageInfo.ftl:media-dimensions.value": [
+    "px",
+    "\u00d7",
+    "px"
+  ],
+  "browser/browser/pageInfo.ftl:security-visits-number": [
+    "one",
+    "other"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-3rdparty": [
+    "chrome.storage.managed"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-BlockAboutAddons": [
+    "addons"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-BlockAboutConfig": [
+    "config"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-BlockAboutProfiles": [
+    "profiles"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-BlockAboutSupport": [
+    "support"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-CaptivePortal": [
+    "portal"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-CertificatesDescription": [
+    "built-in"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-DNSOverHTTPS": [
+    "over"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-DisableDefaultBrowserAgent": [
+    "agent"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-DisableProfileRefresh": [
+    "support"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-DisableSafeMode": [
+    "Maiusc"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-EncryptedMediaExtensions": [
+    "Encrypted",
+    "Extensions"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-LegacySameSiteCookieBehaviorEnabled": [
+    "legacy"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-LegacySameSiteCookieBehaviorEnabledForDomainList": [
+    "legacy"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-NetworkPrediction": [
+    "prediction",
+    "prelettura"
+  ],
+  "browser/browser/policies/policies-descriptions.ftl:policy-SearchEngines": [
+    "Support"
+  ],
+  "browser/browser/preferences/blocklists.ftl:blocklist-description": [
+    "Disconnect"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-dns-over-https-url-custom.tooltiptext": [
+    "over"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-dns-over-https-url-item-default.tooltiptext": [
+    "over"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-dns-over-https.label": [
+    "over"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-proxy-noproxy-desc": [
+    ".mozilla.org",
+    ".net.nz"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-proxy-noproxy-localhost-desc": [
+    "localhost",
+    ":1"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-proxy-socks-remote-dns.label": [
+    "v5"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-proxy-socks4.label": [
+    "v4"
+  ],
+  "browser/browser/preferences/connection.ftl:connection-proxy-socks5.label": [
+    "v5"
+  ],
+  "browser/browser/preferences/containers.ftl:-containers-labels-style": [
+    "min-width",
+    "4rem"
+  ],
+  "browser/browser/preferences/preferences.ftl:applications-type-pdf": [
+    "Portable",
+    "Document",
+    "Format"
+  ],
+  "browser/browser/preferences/preferences.ftl:applications-use-os-default.label": [
+    "PLATFORM",
+    "macos",
+    "macOS",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:containers-back-button.aria-label": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:containers-back-link": [
+    "\u00ab"
+  ],
+  "browser/browser/preferences/preferences.ftl:containers-disable-alert-desc": [
+    "one",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:containers-disable-alert-ok-button": [
+    "one",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:containers-remove-alert-msg": [
+    "one",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:ctrl-tab-recently-used-order.label": [
+    "Ctrl+Tab"
+  ],
+  "browser/browser/preferences/preferences.ftl:do-not-track-description": [
+    "Not",
+    "Track"
+  ],
+  "browser/browser/preferences/preferences.ftl:download-choose-folder.accesskey": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:download-choose-folder.label": [
+    "PLATFORM",
+    "macos",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:drm-content-header": [
+    "Digital",
+    "Rights"
+  ],
+  "browser/browser/preferences/preferences.ftl:home-prefs-sections-rows-option.label": [
+    "one",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:home-prefs-snippets-header.label": [
+    "Snippet"
+  ],
+  "browser/browser/preferences/preferences.ftl:pref-page-title": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:pref-page.title": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:search-input-box.placeholder": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:search-results-empty-message": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-message": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.accesskey": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.label": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:sync-currently-syncing-prefs": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:sync-engine-prefs.label": [
+    "PLATFORM",
+    "windows",
+    "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:use-current-pages.label": [
+    "other"
+  ],
+  "browser/browser/protections.ftl:bar-tooltip-cookie.aria-label": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:bar-tooltip-social.aria-label": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:bar-tooltip-tracker.aria-label": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:graph-total-tracker-summary": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:graph-week-summary": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:info-exposed-passwords-found": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:info-exposed-passwords-resolved": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:info-known-breaches-found": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:info-known-breaches-resolved": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:info-monitored-emails": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:lockwise-scanned-text-breached-logins": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:lockwise-scanned-text-no-breached-logins": [
+    "one",
+    "other"
+  ],
+  "browser/browser/protections.ftl:monitor-partial-breaches-title": [
+    "one",
+    "other"
+  ],
+  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-harmful-page-learn-more": [
+    "phishing",
+    "support.mozilla.org"
+  ],
+  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-malware-page-learn-more": [
+    "StopBadware.org",
+    "phishing",
+    "support.mozilla.org"
+  ],
+  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-phishing-page-learn-more": [
+    "phishing",
+    "www.antiphishing.org",
+    "phishing",
+    "support.mozilla.org"
+  ],
+  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-unwanted-page-learn-more": [
+    "phishing",
+    "support.mozilla.org"
+  ],
+  "browser/browser/sanitize.ftl:clear-time-duration-prefix.value": [
+    "``",
+    "``"
+  ],
+  "browser/browser/screenshots.ftl:screenshots-copy-button-tooltip": [
+    "screenshot"
+  ],
+  "browser/browser/screenshots.ftl:screenshots-download-button-tooltip": [
+    "screenshot"
+  ],
+  "browser/browser/screenshots.ftl:screenshots-meta-key": [
+    "PLATFORM",
+    "macos",
+    "\u2318",
+    "other"
+  ],
+  "browser/browser/tabContextMenu.ftl:tab-context-close-tabs.label": [
+    "other"
+  ],
+  "browser/browser/tabContextMenu.ftl:tab-context-move-tabs.label": [
+    "other"
+  ],
+  "browser/browser/tabContextMenu.ftl:tab-context-undo-close-tabs.label": [
+    "other"
+  ],
+  "browser/browser/toolbarContextMenu.ftl:toolbar-context-menu-undo-close-tabs.label": [
+    "other"
+  ],
+  "browser/chrome/browser/activity-stream/newtab.properties:settings_pane_snippets_header": [
+    "Snippet"
+  ],
+  "browser/chrome/browser/browser.dtd:editBookmark.panel.width": [
+    "28em"
+  ],
+  "browser/chrome/browser/browser.dtd:findAgainCmd.commandkey2": [
+    "VK_F3"
+  ],
+  "browser/chrome/browser/browser.dtd:fullScreenCmd.label": [
+    "intero\u00ad"
+  ],
+  "browser/chrome/browser/browser.dtd:homeButton.label": [
+    "iniziale\u00ad"
+  ],
+  "browser/chrome/browser/browser.dtd:mediaPlaybackRate050x2.label": [
+    "0.5\u00d7"
+  ],
+  "browser/chrome/browser/browser.dtd:mediaPlaybackRate125x2.label": [
+    "1.25\u00d7"
+  ],
+  "browser/chrome/browser/browser.dtd:mediaPlaybackRate150x2.label": [
+    "1.5\u00d7"
+  ],
+  "browser/chrome/browser/browser.dtd:mediaPlaybackRate200x2.label": [
+    "2\u00d7"
+  ],
+  "browser/chrome/browser/browser.dtd:newNavigatorCmd.label": [
+    "finestra\u00ad"
+  ],
+  "browser/chrome/browser/browser.dtd:pluginNotification.width": [
+    "28em"
+  ],
+  "browser/chrome/browser/browser.dtd:toggleReaderMode.win.keycode": [
+    "VK_F9"
+  ],
+  "browser/chrome/browser/browser.dtd:urlbar.searchSuggestionsNotification.hint": [
+    "\ud83d\udd0e"
+  ],
+  "browser/chrome/browser/browser.properties:addonDownloadingAndVerifying": [
+    "comp",
+    "comp"
+  ],
+  "browser/chrome/browser/browser.properties:addonLocalInstallError-1": [
+    "filesystem"
+  ],
+  "browser/chrome/browser/browser.properties:certImminentDistrust.message": [
+    "wiki.mozilla.org",
+    "Upcoming_Distrust_Actions"
+  ],
+  "browser/chrome/browser/browser.properties:decoder.noCodecs.message": [
+    "Feature"
+  ],
+  "browser/chrome/browser/browser.properties:decoder.noCodecsLinux.message": [
+    "codec"
+  ],
+  "browser/chrome/browser/browser.properties:decoder.noHWAcceleration.message": [
+    "Feature"
+  ],
+  "browser/chrome/browser/browser.properties:decoder.noPulseAudio.message": [
+    "PulseAudio"
+  ],
+  "browser/chrome/browser/browser.properties:decoder.unsupportedLibavcodec.message": [
+    "libavcodec"
+  ],
+  "browser/chrome/browser/browser.properties:e10s.accessibilityNotice.jawsMessage": [
+    "Support"
+  ],
+  "browser/chrome/browser/browser.properties:livebookmarkMigration.title": [
+    "Live"
+  ],
+  "browser/chrome/browser/browser.properties:midi.shareSysexWithFile.message": [
+    "SysEx"
+  ],
+  "browser/chrome/browser/browser.properties:midi.shareSysexWithSite.message": [
+    "SysEx"
+  ],
+  "browser/chrome/browser/browser.properties:offlineApps.usage": [
+    "SMB"
+  ],
+  "browser/chrome/browser/downloads/downloads.dtd:downloads.width": [
+    "70ch"
+  ],
+  "browser/chrome/browser/downloads/downloads.properties:statusSeparator": [
+    "\u2014"
+  ],
+  "browser/chrome/browser/downloads/downloads.properties:statusSeparatorBeforeNumber": [
+    "\u2014"
+  ],
+  "browser/chrome/browser/newInstall.dtd:window.style": [
+    "width",
+    "490px"
+  ],
+  "browser/chrome/browser/preferences/preferences.properties:portableDocumentFormat": [
+    "Portable",
+    "Document",
+    "Format"
+  ],
+  "browser/chrome/browser/shellservice.properties:desktopBackgroundLeafNameWin": [
+    "desktop.bmp"
+  ],
+  "browser/chrome/browser/sitePermissions.properties:permission.midi-sysex.label": [
+    "SysEx"
+  ],
+  "browser/chrome/browser/tabbrowser.properties:browsewithcaret.checkLabel": [
+    "F7"
+  ],
+  "browser/chrome/browser/translation.dtd:translation.options.attribution.yandexTranslate": [
+    "Yandex.Translate"
+  ],
+  "browser/chrome/overrides/appstrings.properties:sslv3Used": [
+    "SSLv3"
+  ],
+  "browser/chrome/overrides/appstrings.properties:xfoBlocked": [
+    "X-Frame-Options"
+  ],
+  "browser/chrome/overrides/netError.dtd:inadequateSecurityError.longDesc": [
+    "NS_ERROR_NET_INADEQUATE_SECURITY"
+  ],
+  "browser/chrome/overrides/netError.dtd:sslv3Used.longDesc2": [
+    "SSL_ERROR_UNSUPPORTED_VERSION"
+  ],
+  "browser/chrome/overrides/netError.dtd:unknownSocketType.longDesc": [
+    "Personal"
+  ],
+  "browser/chrome/overrides/netError.dtd:xfoBlocked.longDesc": [
+    "X-Frame-Options"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:autocompleteFooterOptionOSXShort2": [
+    "autom"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:autocompleteFooterOptionShort2": [
+    "autom"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:autofillReauthCheckboxMac": [
+    "macOS"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardCVV": [
+    "CVV"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardExpiresMonth": [
+    "Scad"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardExpiresYear": [
+    "Scad"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.amex": [
+    "American",
+    "Express"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.cartebancaire": [
+    "Bancaire"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.diners": [
+    "Diners"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.discover": [
+    "Discover"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.jcb": [
+    "JCB"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.mastercard": [
+    "MasterCard"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.unionpay": [
+    "Union",
+    "Pay"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:cardNetwork.visa": [
+    "Visa"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:county": [
+    "County"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:eircode": [
+    "Eircode"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:fieldNameSeparator": [
+    "\\u0020"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:manageDialogsWidth": [
+    "600px"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:oblast": [
+    "Oblast"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:parish": [
+    "Parish"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:pin": [
+    "Pin"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:post_town": [
+    "town"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:suburb": [
+    "Suburb"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:townland": [
+    "Townland"
+  ],
+  "browser/extensions/formautofill/formautofill.properties:village_township": [
+    "township"
+  ],
+  "browser/installer/custom.properties:CONTEXT_OPTIONS": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:CONTEXT_SAFE_MODE": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:CREATE_ICONS_DESC": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:LAUNCH_TEXT": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:OPTIONAL_COMPONENTS_DESC": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:OPTION_STANDARD_DESC": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:REG_APP_DESC": [
+    "BrandShortName",
+    "phishing"
+  ],
+  "browser/installer/custom.properties:STATUS_INSTALL_APP": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:STATUS_UNINSTALL_MAIN": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:SUMMARY_INSTALLED_TO": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:SUMMARY_PAGE_SUBTITLE": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:SUMMARY_TAKE_DEFAULTS": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:SURVEY_TEXT": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:UN_CONFIRM_PAGE_SUBTITLE": [
+    "BrandFullName"
+  ],
+  "browser/installer/custom.properties:UN_CONFIRM_PAGE_TITLE": [
+    "BrandFullName"
+  ],
+  "browser/installer/custom.properties:UN_CONFIRM_UNINSTALLED_FROM": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:UN_REFRESH_BUTTON": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:UN_REFRESH_PAGE_EXPLANATION": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:UN_REFRESH_PAGE_TITLE": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:UN_SURVEY_CHECKBOX_LABEL": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_INSTALL": [
+    "BrandShortName",
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_LAUNCH": [
+    "BrandShortName",
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_REFRESH": [
+    "BrandShortName",
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_UNINSTALL": [
+    "BrandShortName",
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MIN_SUPPORTED_CPU_MSG": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MIN_SUPPORTED_OSVER_CPU_MSG": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_MIN_SUPPORTED_OSVER_MSG": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_RESTART_REQUIRED_UNINSTALL": [
+    "BrandShortName"
+  ],
+  "browser/installer/custom.properties:WARN_RESTART_REQUIRED_UPGRADE": [
+    "BrandShortName"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_ABORTWARNING": [
+    "BrandFullName"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_COMPONENTS_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_DIRECTORY_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_FINISH_INFO_REBOOT": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_FINISH_INFO_TEXT": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_FINISH_INFO_TITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_INSTALLING_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_STARTMENU_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_WELCOME_INFO_TEXT": [
+    "BrandFullNameDA",
+    "_CLICK"
+  ],
+  "browser/installer/mui.properties:MUI_TEXT_WELCOME_INFO_TITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_ABORTWARNING": [
+    "BrandFullName"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_CONFIRM_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_CONFIRM_TITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_FINISH_INFO_REBOOT": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_FINISH_INFO_TEXT": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_FINISH_INFO_TITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_UNINSTALLING_SUBTITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_WELCOME_INFO_TEXT": [
+    "BrandFullNameDA",
+    "BrandFullNameDA",
+    "_CLICK"
+  ],
+  "browser/installer/mui.properties:MUI_UNTEXT_WELCOME_INFO_TITLE": [
+    "BrandFullNameDA"
+  ],
+  "browser/installer/nsisstrings.properties:ERROR_DOWNLOAD_CONT": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:INSTALLER_WIN_CAPTION": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_BLURB_FIRST1": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_CANCEL_PROMPT_BUTTON_CONTINUE": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_CANCEL_PROMPT_HEADING": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_CANCEL_PROMPT_MESSAGE": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_CLEANUP_PAVEOVER_HEADER2": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_CLEANUP_REINSTALL_HEADER2": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_INSTALLING_BODY2": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:STUB_INSTALLING_HEADLINE": [
+    "BrandProductName"
+  ],
+  "browser/installer/nsisstrings.properties:WARN_MANUALLY_CLOSE_APP_LAUNCH": [
+    "BrandShortName",
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:WARN_MIN_SUPPORTED_CPU_MSG": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:WARN_MIN_SUPPORTED_OSVER_CPU_MSG": [
+    "BrandShortName"
+  ],
+  "browser/installer/nsisstrings.properties:WARN_MIN_SUPPORTED_OSVER_MSG": [
+    "BrandShortName"
+  ],
+  "browser/pdfviewer/viewer.properties:document_properties_page_size_dimension_name_string": [
+    "\u00d7"
+  ],
+  "browser/pdfviewer/viewer.properties:document_properties_page_size_dimension_string": [
+    "\u00d7"
+  ],
+  "browser/updater/updater.ini:MozillaMaintenanceDescription": [
+    "Maintenance"
+  ],
+  "devtools/client/aboutdebugging.ftl:about-debugging-browser-version-too-recent": [
+    "buildID",
+    "buildID"
+  ],
+  "devtools/client/aboutdebugging.ftl:about-debugging-extension-uuid.label": [
+    "UUID"
+  ],
+  "devtools/client/aboutdebugging.ftl:about-debugging-tmp-extension-install-message": [
+    "manifest.json",
+    ".xpi",
+    ".zip"
+  ],
+  "devtools/client/aboutdebugging.properties:internalUUID": [
+    "UUID"
+  ],
+  "devtools/client/aboutdebugging.properties:loadTemporaryAddon2": [
+    "comp"
+  ],
+  "devtools/client/aboutdebugging.properties:multiProcessWarningMessage2": [
+    "dom.ipc.multiOptOut"
+  ],
+  "devtools/client/aboutdebugging.properties:selectAddonFromFile2": [
+    ".xpi"
+  ],
+  "devtools/client/aboutdebugging.properties:webExtTip": [
+    "web-ext"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-focus-visible": [
+    "focusable"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-focusable": [
+    "focusable"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-mouse-only": [
+    "clickable",
+    "focusable"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-semantics": [
+    "focusable"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-keyboard-issue-tabindex": [
+    "tabindex"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-area": [
+    "href"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-document-title": [
+    "title"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-embed": [
+    "embedded"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-fieldset": [
+    "fieldset"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-fieldset-legend2": [
+    "legend",
+    "fieldset"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-figure": [
+    "caption"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-glyph": [
+    "mglyph"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-iframe": [
+    "title"
+  ],
+  "devtools/client/accessibility.ftl:accessibility-text-label-issue-optgroup-label2": [
+    "label",
+    "optgroup"
+  ],
+  "devtools/client/accessibility.properties:accessibility.contrast.annotation.AA": [
+    "AA"
+  ],
+  "devtools/client/accessibility.properties:accessibility.contrast.annotation.AAA": [
+    "AAA"
+  ],
+  "devtools/client/accessibility.properties:accessibility.simulation.deuteranopia": [
+    "green"
+  ],
+  "devtools/client/animationinspector.properties:player.animationTimingFunctionLabel": [
+    "timing"
+  ],
+  "devtools/client/animationinspector.properties:player.infiniteDurationText": [
+    "\u221e"
+  ],
+  "devtools/client/animationinspector.properties:player.infiniteIterationCount": [
+    "\u221e"
+  ],
+  "devtools/client/animationinspector.properties:player.infiniteIterationCountText": [
+    "\u221e"
+  ],
+  "devtools/client/animationinspector.properties:player.infiniteTimeLabel": [
+    "\u221e"
+  ],
+  "devtools/client/animationinspector.properties:player.playbackRateLabel": [
+    "\u00d7"
+  ],
+  "devtools/client/animationinspector.properties:player.runningOnCompositorTooltip": [
+    "compositor"
+  ],
+  "devtools/client/app-manager.properties:validator.missIconMarketplace2": [
+    "Marketplace"
+  ],
+  "devtools/client/app-manager.properties:validator.missIconsManifestProperty": [
+    "icons"
+  ],
+  "devtools/client/app-manager.properties:validator.missNameManifestProperty": [
+    "name"
+  ],
+  "devtools/client/app-manager.properties:validator.noCertifiedSupport": [
+    "certified"
+  ],
+  "devtools/client/app-manager.properties:validator.noManifestFile": [
+    "manifest.webapp",
+    "packaged",
+    "manifest.json"
+  ],
+  "devtools/client/compatibility.ftl:compatibility-issue-occurrences": [
+    "one",
+    "other"
+  ],
+  "devtools/client/components.properties:frame.viewsourceindebugger": [
+    "\u2192"
+  ],
+  "devtools/client/components.properties:frame.viewsourceinstyleeditor": [
+    "\u2192"
+  ],
+  "devtools/client/connection-screen.dtd:availableAddons": [
+    "agg"
+  ],
+  "devtools/client/debugger.properties:WebIDLTooltip": [
+    "WebIDL"
+  ],
+  "devtools/client/debugger.properties:allShortcut.key": [
+    "CmdOrCtrl+"
+  ],
+  "devtools/client/debugger.properties:editor.conditionalPanel.placeholder2": [
+    "items.length"
+  ],
+  "devtools/client/debugger.properties:eventListenersHeader": [
+    "Listener"
+  ],
+  "devtools/client/debugger.properties:eventListenersHeader1": [
+    "listener"
+  ],
+  "devtools/client/debugger.properties:expressions.key": [
+    "CmdOrCtrl+Shift+E"
+  ],
+  "devtools/client/debugger.properties:extensibleTooltip": [
+    "extensible"
+  ],
+  "devtools/client/debugger.properties:frozenTooltip": [
+    "frozen"
+  ],
+  "devtools/client/debugger.properties:functionSearch.key": [
+    "CmdOrCtrl+Shift+O"
+  ],
+  "devtools/client/debugger.properties:functionSearchSeparatorLabel": [
+    "\u2190"
+  ],
+  "devtools/client/debugger.properties:gamepadEvents": [
+    "Gamepad"
+  ],
+  "devtools/client/debugger.properties:gotoLineModal.key2": [
+    "CmdOrCtrl+"
+  ],
+  "devtools/client/debugger.properties:gotoLineModal.key3": [
+    "Ctrl+G"
+  ],
+  "devtools/client/debugger.properties:indexedDBEvents": [
+    "IndexedDB"
+  ],
+  "devtools/client/debugger.properties:noEventListenersText": [
+    "listener"
+  ],
+  "devtools/client/debugger.properties:overriddenTooltip": [
+    "override"
+  ],
+  "devtools/client/debugger.properties:pauseOnAnyXHR": [
+    "XHR"
+  ],
+  "devtools/client/debugger.properties:projectTextSearch.key": [
+    "CmdOrCtrl+Shift+F"
+  ],
+  "devtools/client/debugger.properties:scopes.helpTooltip.label": [
+    "mapping"
+  ],
+  "devtools/client/debugger.properties:scopes.map.label": [
+    "mapping"
+  ],
+  "devtools/client/debugger.properties:sealedTooltip": [
+    "sealed"
+  ],
+  "devtools/client/debugger.properties:settings.toggleSourceMaps.label": [
+    "Mapping"
+  ],
+  "devtools/client/debugger.properties:settings.toggleSourceMaps.tooltip": [
+    "mapping"
+  ],
+  "devtools/client/debugger.properties:sourceSearch.search.again.key2": [
+    "CmdOrCtrl+G"
+  ],
+  "devtools/client/debugger.properties:sourceSearch.search.again.key3": [
+    "Cmd+G"
+  ],
+  "devtools/client/debugger.properties:sourceSearch.search.againPrev.key2": [
+    "CmdOrCtrl+Shift+G"
+  ],
+  "devtools/client/debugger.properties:sourceSearch.search.againPrev.key3": [
+    "Cmd+Shift+G"
+  ],
+  "devtools/client/debugger.properties:sourceSearch.search.key2": [
+    "CmdOrCtrl+F"
+  ],
+  "devtools/client/debugger.properties:sourceTabs.closeTab.key": [
+    "CmdOrCtrl+W"
+  ],
+  "devtools/client/debugger.properties:sources.search.alt.key": [
+    "CmdOrCtrl+O"
+  ],
+  "devtools/client/debugger.properties:sources.search.key2": [
+    "CmdOrCtrl+P"
+  ],
+  "devtools/client/debugger.properties:stacktrace.asyncStack": [
+    "Asinc"
+  ],
+  "devtools/client/debugger.properties:stepOut.key": [
+    "Shift+F11"
+  ],
+  "devtools/client/debugger.properties:symbolSearch.search.key2": [
+    "CmdOrCtrl+Shift+O"
+  ],
+  "devtools/client/debugger.properties:symbolSearch.searchModifier.regex": [
+    "Esp"
+  ],
+  "devtools/client/debugger.properties:toggleBreakpoint.key": [
+    "CmdOrCtrl+B"
+  ],
+  "devtools/client/debugger.properties:toggleCondPanel.breakpoint.key": [
+    "CmdOrCtrl+Shift+B"
+  ],
+  "devtools/client/debugger.properties:toggleCondPanel.logPoint.key": [
+    "CmdOrCtrl+Shift+Y"
+  ],
+  "devtools/client/debugger.properties:watchExpressionsSeparatorLabel2": [
+    "\\u0020\u2192"
+  ],
+  "devtools/client/debugger.properties:watchpoints.removeWatchpoint": [
+    "watchpoint"
+  ],
+  "devtools/client/debugger.properties:watchpoints.removeWatchpointTooltip": [
+    "watchpoint"
+  ],
+  "devtools/client/debugger.properties:whyPaused.XHR": [
+    "XMLHttpRequest"
+  ],
+  "devtools/client/debugger.properties:whyPaused.pauseOnDOMEvents": [
+    "listener"
+  ],
+  "devtools/client/debugger.properties:whyPaused.xhr": [
+    "XMLHttpRequest"
+  ],
+  "devtools/client/debugger.properties:xhrBreakpoints.header": [
+    "XHR"
+  ],
+  "devtools/client/debugger.properties:xhrBreakpoints.label": [
+    "XHR"
+  ],
+  "devtools/client/graphs.properties:graphs.label.minimum": [
+    "min"
+  ],
+  "devtools/client/inspector.properties:eventsTooltip.Bubbling": [
+    "Bubbling"
+  ],
+  "devtools/client/inspector.properties:eventsTooltip.Capturing": [
+    "Capturing"
+  ],
+  "devtools/client/inspector.properties:eventsTooltip.unknownLocationExplanation": [
+    "listener",
+    "transpiled",
+    "Babel"
+  ],
+  "devtools/client/inspector.properties:inspector.searchHTML.key": [
+    "CmdOrCtrl+F"
+  ],
+  "devtools/client/inspector.properties:inspectorCopyXPath.label": [
+    "XPath"
+  ],
+  "devtools/client/inspector.properties:markupView.display.flex.tooltiptext": [
+    "block",
+    "flexbox"
+  ],
+  "devtools/client/inspector.properties:markupView.display.flex.tooltiptext2": [
+    "block",
+    "flexbox",
+    "l'overlay",
+    "flexbox"
+  ],
+  "devtools/client/inspector.properties:markupView.display.flowRoot.tooltiptext": [
+    "block",
+    "element"
+  ],
+  "devtools/client/inspector.properties:markupView.display.grid.tooltiptext": [
+    "block"
+  ],
+  "devtools/client/inspector.properties:markupView.display.grid.tooltiptext2": [
+    "block",
+    "l'overlay"
+  ],
+  "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext": [
+    "inline",
+    "flexbox"
+  ],
+  "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext2": [
+    "inline",
+    "flexbox",
+    "l'overlay",
+    "flexbox"
+  ],
+  "devtools/client/inspector.properties:markupView.display.inlineGrid.tooltiptext": [
+    "inline"
+  ],
+  "devtools/client/inspector.properties:markupView.display.inlineGrid.tooltiptext2": [
+    "inline",
+    "l'overlay"
+  ],
+  "devtools/client/inspector.properties:markupView.edit.key": [
+    "F2"
+  ],
+  "devtools/client/inspector.properties:markupView.event.tooltiptext": [
+    "Listener"
+  ],
+  "devtools/client/inspector.properties:markupView.scrollableBadge.tooltip": [
+    "overflow"
+  ],
+  "devtools/client/jit-optimizations.properties:jit.title": [
+    "JIT"
+  ],
+  "devtools/client/layout.properties:flexbox.backButtonLabel": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.flexContainer": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.flexItemOf": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.flexItems": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.header": [
+    "Flexbox"
+  ],
+  "devtools/client/layout.properties:flexbox.noFlexItems": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.noFlexboxeOnThisPage": [
+    "flex"
+  ],
+  "devtools/client/layout.properties:flexbox.togglesFlexboxHighlighter2": [
+    "flexbox"
+  ],
+  "devtools/client/markers.properties:marker.field.asyncStack": [
+    "Asinc"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.ALLOC_TRIGGER": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.API": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.CC_FORCED": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.CC_WAITING": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.COMPARTMENT_REVIVED": [
+    "dead",
+    "GC",
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.COMPONENT_UTILS": [
+    "Components.utils.forceGC",
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.DEBUG_GC": [
+    "GC",
+    "Zeal"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.DESTROY_RUNTIME": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.DOM_IPC": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.DOM_UTILS": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.DOM_WINDOW_UTILS": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.EAGER_ALLOC_TRIGGER": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.EVICT_NURSERY": [
+    "sull'heap"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.FULL_GC_TIMER": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.INCREMENTAL_TOO_SLOW": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.INTER_SLICE_GC": [
+    "GC",
+    "slice"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.LAST_DITCH": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.NSJSCONTEXT_DESTROY": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.OUT_OF_NURSERY": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.PERIODIC_FULL_GC": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.RESET": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.SHARED_MEMORY_LIMIT": [
+    "large"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.SHUTDOWN_CC": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.TOO_MUCH_MALLOC": [
+    "garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.description.USER_INACTIVE": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.COMPONENT_UTILS": [
+    "Cu.forceGC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.DEBUG_GC": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.DOM_IPC": [
+    "IPC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.DOM_WORKER": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.EAGER_ALLOC_TRIGGER": [
+    "eager"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.FULL_GC_TIMER": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.INTER_SLICE_GC": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.gcreason.label.PERIODIC_FULL_GC": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.label.composite": [
+    "Layer"
+  ],
+  "devtools/client/markers.properties:marker.label.garbageCollection.incremental": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.label.garbageCollection.nonIncremental": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.label.garbageCollection2": [
+    "Garbage",
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.label.javascript.promiseCallback": [
+    "Callback"
+  ],
+  "devtools/client/markers.properties:marker.label.javascript.promiseInit": [
+    "Init"
+  ],
+  "devtools/client/markers.properties:marker.label.javascript.scriptElement": [
+    "Tag"
+  ],
+  "devtools/client/markers.properties:marker.label.messagePort": [
+    "MessagePort"
+  ],
+  "devtools/client/markers.properties:marker.label.minorGC": [
+    "GC"
+  ],
+  "devtools/client/markers.properties:marker.label.paint": [
+    "Paint"
+  ],
+  "devtools/client/markers.properties:marker.label.timestamp": [
+    "Timestamp"
+  ],
+  "devtools/client/markers.properties:marker.messagePort.deserializeData": [
+    "Deserializza"
+  ],
+  "devtools/client/markers.properties:marker.nurseryCollection": [
+    "collection"
+  ],
+  "devtools/client/markers.properties:marker.value.DOMEventBubblingPhase": [
+    "Bubbling"
+  ],
+  "devtools/client/markers.properties:marker.value.DOMEventCapturingPhase": [
+    "Capture"
+  ],
+  "devtools/client/markers.properties:marker.worker.deserializeDataOffMainThread": [
+    "Deserializza"
+  ],
+  "devtools/client/markers.properties:marker.worker.deserializeDataOnMainThread": [
+    "Deserializza"
+  ],
+  "devtools/client/memory.properties:censusDisplays.internalType.tooltip": [
+    "C++"
+  ],
+  "devtools/client/memory.properties:censusDisplays.objectClass.tooltip": [
+    "Object"
+  ],
+  "devtools/client/memory.properties:dominatorTree.state.fetching.full": [
+    "retained"
+  ],
+  "devtools/client/memory.properties:dominatorTreeDisplays.internalType.tooltip": [
+    "C++"
+  ],
+  "devtools/client/memory.properties:heapview.field.retainedSize": [
+    "retained"
+  ],
+  "devtools/client/memory.properties:heapview.field.shallowSize": [
+    "shallow"
+  ],
+  "devtools/client/memory.properties:shortest-paths.header": [
+    "Garbage",
+    "Collector"
+  ],
+  "devtools/client/memory.properties:snapshot.state.saving-census.full": [
+    "report"
+  ],
+  "devtools/client/memory.properties:toolbar.pop-view": [
+    "\u2190"
+  ],
+  "devtools/client/memory.properties:toolbar.viewing-individuals": [
+    "\u2042"
+  ],
+  "devtools/client/memory.properties:tree-item.rootlist": [
+    "GC"
+  ],
+  "devtools/client/menus.properties:webide.label": [
+    "WebIDE"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certdetail.cn": [
+    "CN"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certdetail.ou": [
+    "OU"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certdetail.sha1fingerprint": [
+    "SHA1"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certdetail.sha256fingerprint": [
+    "SHA-256"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certificateTransparency.status.notDiverseSCTS": [
+    "SCT"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certificateTransparency.status.notEnoughSCTS": [
+    "SCT"
+  ],
+  "devtools/client/netmonitor.properties:certmgr.certificateTransparency.status.ok": [
+    "SCT"
+  ],
+  "devtools/client/netmonitor.properties:jsonpScopeName": [
+    "JSONP",
+    "\u2192",
+    "callback"
+  ]
+}

@@ -13,8 +13,8 @@ function setupVirtualEnv() {
     fi
 
     # Install or update dependencies
-    echo "Installing dependencies in virtualenv"
     source python-venv/bin/activate || exit 1
+    pip install --upgrade --quiet pip
     pip install -r $script_path/requirements.txt --upgrade --quiet
     deactivate
 }
