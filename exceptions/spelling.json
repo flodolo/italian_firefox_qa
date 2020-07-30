@@ -262,7 +262,6 @@
     "over"
   ],
   "browser/browser/preferences/connection.ftl:connection-proxy-noproxy-desc": [
-    ".mozilla.org",
     ".net.nz"
   ],
   "browser/browser/preferences/connection.ftl:connection-proxy-noproxy-localhost-desc": [
@@ -412,23 +411,19 @@
     "other"
   ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-harmful-page-learn-more": [
-    "phishing",
-    "support.mozilla.org"
+    "phishing"
   ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-malware-page-learn-more": [
     "StopBadware.org",
-    "phishing",
-    "support.mozilla.org"
+    "phishing"
   ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-phishing-page-learn-more": [
     "phishing",
     "www.antiphishing.org",
-    "phishing",
-    "support.mozilla.org"
+    "phishing"
   ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-unwanted-page-learn-more": [
-    "phishing",
-    "support.mozilla.org"
+    "phishing"
   ],
   "browser/browser/screenshots.ftl:screenshots-copy-button-tooltip": [
     "screenshot"
@@ -478,7 +473,6 @@
     "filesystem"
   ],
   "browser/chrome/browser/browser.properties:certImminentDistrust.message": [
-    "wiki.mozilla.org",
     "Upcoming_Distrust_Actions"
   ],
   "browser/chrome/browser/browser.properties:decoder.noCodecsLinux.message": [

@@ -494,13 +494,11 @@
     "libavcodec"
   ],
   "dom/chrome/dom/dom.properties:MediaWMFNeeded": [
-    "support.mozilla.org",
     "kb",
     "fix-video-audio-problems-firefox-windows"
   ],
   "dom/chrome/dom/dom.properties:MediaWidevineNoWMF": [
     "Widevine",
-    "support.mozilla.org",
     "kb",
     "fix-video-audio-problems-firefox-windows"
   ],
@@ -1916,15 +1914,9 @@
   "toolkit/crashreporter/aboutcrashes.ftl:no-config-label": [
     "breakpad.reportURL"
   ],
-  "toolkit/toolkit/about/aboutAddons.ftl:addons-heading-search-input.placeholder": [
-    "addons.mozilla.org"
-  ],
   "toolkit/toolkit/about/aboutAddons.ftl:five-star-rating.title": [
     "rating",
     "maximumFractionDigits"
-  ],
-  "toolkit/toolkit/about/aboutAddons.ftl:search-header.placeholder": [
-    "addons.mozilla.org"
   ],
   "toolkit/toolkit/about/aboutCompat.ftl:text-disabled-in-about-config": [
     "config"

@@ -175,8 +175,8 @@ class CheckStrings():
         if token == token.upper():
             return True
 
-        # Ignore example.com strings
-        if 'example.com' in token:
+        # Ignore domains in strings
+        if any(k in token for k in ['example.com', 'mozilla.org']):
             return True
 
         # Ignore DevTools accesskeys
