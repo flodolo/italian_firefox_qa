@@ -309,9 +309,6 @@
     "one",
     "other"
   ],
-  "browser/browser/preferences/preferences.ftl:ctrl-tab-recently-used-order.label": [
-    "Ctrl+Tab"
-  ],
   "browser/browser/preferences/preferences.ftl:do-not-track-description": [
     "Not",
     "Track"
@@ -909,9 +906,6 @@
   "devtools/client/debugger.properties:gamepadEvents": [
     "Gamepad"
   ],
-  "devtools/client/debugger.properties:gotoLineModal.key3": [
-    "Ctrl+G"
-  ],
   "devtools/client/debugger.properties:indexedDBEvents": [
     "IndexedDB"
   ],
@@ -923,12 +917,6 @@
   ],
   "devtools/client/debugger.properties:sealedTooltip": [
     "sealed"
-  ],
-  "devtools/client/debugger.properties:sourceSearch.search.again.key3": [
-    "Cmd+G"
-  ],
-  "devtools/client/debugger.properties:sourceSearch.search.againPrev.key3": [
-    "Cmd+Shift+G"
   ],
   "devtools/client/debugger.properties:stacktrace.asyncStack": [
     "Asinc"

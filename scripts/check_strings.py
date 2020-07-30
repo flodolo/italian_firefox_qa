@@ -163,13 +163,13 @@ class CheckStrings():
     def excludeToken(self, token):
         '''Exclude specific tokens after spellcheck'''
 
-        # Ignore DevTools accesskeys
-        if 'CmdOrCtrl' in token:
-            return True
-
         # Ignore acronyms (all uppercase) and token made up only by
         # unicode characters, or punctuation
         if token == token.upper():
+            return True
+
+        # Ignore DevTools accesskeys
+        if any(k in token for k in ['Alt+', 'Cmd+', 'Ctrl+']):
             return True
 
         return False

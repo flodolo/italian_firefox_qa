@@ -88,14 +88,8 @@
   "devtools/client/storage.properties:tree.labels.indexedDB": [
     "Indexed"
   ],
-  "devtools/client/toolbox.properties:toolbox.elementPicker.mac.key": [
-    "Cmd+Opt+C"
-  ],
   "devtools/client/toolbox.properties:toolbox.options.enableNewDebugger.label": [
     "frontend"
-  ],
-  "devtools/client/toolbox.properties:toolbox.showFrames.key": [
-    "Alt+Down"
   ],
   "devtools/client/tooltips.ftl:inactive-css-not-display-block-on-floated": [
     "floated"
@@ -139,15 +133,6 @@
   ],
   "devtools/client/webconsole.properties:stacktrace.asyncStack": [
     "Asinc"
-  ],
-  "devtools/client/webconsole.properties:webconsole.clear.alternativeKeyOSX": [
-    "Cmd+k"
-  ],
-  "devtools/client/webconsole.properties:webconsole.clear.key": [
-    "Ctrl+Shift+L"
-  ],
-  "devtools/client/webconsole.properties:webconsole.clear.keyOSX": [
-    "Ctrl+L"
   ],
   "devtools/client/webconsole.properties:webconsole.confirmDialog.getter.label": [
     "getter"
