@@ -14,16 +14,20 @@
     "other"
   ],
   "browser/browser/aboutLogins.ftl:enable-password-sync-notification-message": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/aboutLogins.ftl:enable-password-sync-preferences-button.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/aboutLogins.ftl:menu-menuitem-preferences": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/aboutPrivateBrowsing.ftl:about-private-browsing-search-banner-description": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/aboutRobots.ftl:page-title": [
     "Gort",
@@ -70,10 +74,12 @@
     "finestra\u00ad"
   ],
   "browser/browser/menubar.ftl:menu-preferences.accesskey": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/menubar.ftl:menu-preferences.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/menubar.ftl:menu-view-full-screen.label": [
     "intero\u00ad"
@@ -97,7 +103,8 @@
     "other"
   ],
   "browser/browser/migration.ftl:import-from": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-rating.tooltiptext": [
     "one",
@@ -123,11 +130,7 @@
     "Screenshot"
   ],
   "browser/browser/nsserrors.ftl:mozilla-pkix-error-key-pinning-failure": [
-    "key",
-    "pinning",
-    "pinset",
-    "key",
-    "pinning"
+    "pinset"
   ],
   "browser/browser/nsserrors.ftl:mozilla-pkix-error-signature-algorithm-mismatch": [
     "signature",
@@ -169,9 +172,6 @@
     "length",
     "constraint"
   ],
-  "browser/browser/nsserrors.ftl:sec-error-safe-not-created": [
-    "safe"
-  ],
   "browser/browser/nsserrors.ftl:sec-internal-only": [
     "**Modulo",
     "interno**"
@@ -185,6 +185,18 @@
     "protocol",
     "negotiation",
     "callback"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-rx-malformed-finished": [
+    "Finished"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-rx-malformed-hello-done": [
+    "Done"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-rx-unexpected-finished": [
+    "Finished"
+  ],
+  "browser/browser/nsserrors.ftl:ssl-error-rx-unexpected-hello-done": [
+    "Done"
   ],
   "browser/browser/nsserrors.ftl:ssl-error-unexpected-extended-master-secret": [
     "extended_master_secret"
@@ -238,12 +250,6 @@
   "browser/browser/policies/policies-descriptions.ftl:policy-DisableSafeMode": [
     "Maiusc"
   ],
-  "browser/browser/policies/policies-descriptions.ftl:policy-LegacySameSiteCookieBehaviorEnabled": [
-    "legacy"
-  ],
-  "browser/browser/policies/policies-descriptions.ftl:policy-LegacySameSiteCookieBehaviorEnabledForDomainList": [
-    "legacy"
-  ],
   "browser/browser/policies/policies-descriptions.ftl:policy-NetworkPrediction": [
     "prediction",
     "prelettura"
@@ -290,10 +296,12 @@
   "browser/browser/preferences/preferences.ftl:applications-use-os-default.label": [
     "macos",
     "macOS",
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:containers-back-button.aria-label": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:containers-disable-alert-desc": [
     "one",
@@ -331,31 +339,40 @@
     "Snippet"
   ],
   "browser/browser/preferences/preferences.ftl:pref-page-title": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:pref-page.title": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:search-input-box.placeholder": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:search-results-empty-message": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-message": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.accesskey": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:space-alert-over-5gb-pref-button.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:sync-currently-syncing-prefs": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:sync-engine-prefs.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "browser/browser/preferences/preferences.ftl:use-current-pages.label": [
     "other"
@@ -1321,9 +1338,6 @@
   "devtools/shared/styleinspector.properties:styleinspector.copyImageDataUrlError": [
     "Data-URL"
   ],
-  "dom/chrome/appstrings.properties:redirectLoop": [
-    "reindirizzamenti"
-  ],
   "dom/chrome/appstrings.properties:sslv3Used": [
     "SSLv3"
   ],
@@ -1436,9 +1450,6 @@
   ],
   "dom/chrome/dom/dom.properties:GeolocationInsecureRequestIsForbidden": [
     "Geolocation"
-  ],
-  "dom/chrome/dom/dom.properties:HTMLSyncXHRWarning": [
-    "parsing"
   ],
   "dom/chrome/dom/dom.properties:IDBOpenDBOptions_StorageTypeWarning": [
     "storage",
@@ -1764,7 +1775,6 @@
   ],
   "dom/chrome/dom/dom.properties:SpeculationFailed": [
     "document.write",
-    "parsing",
     "Optimizing_Your_Pages_for_Speculative_Parsing"
   ],
   "dom/chrome/dom/dom.properties:SyncXMLHttpRequestWarning": [
@@ -2015,7 +2025,7 @@
   ],
   "dom/chrome/layout/htmlparser.properties:EncMetaUserDefined": [
     "x-user-defined",
-    "legacy"
+    "windows-1252"
   ],
   "dom/chrome/layout/htmlparser.properties:EncNoDeclarationPlain": [
     "order",
@@ -2229,8 +2239,7 @@
     "_files"
   ],
   "dom/chrome/plugins.properties:cdm_description2": [
-    "www.w3.org",
-    "encrypted-media"
+    "www.w3.org"
   ],
   "dom/chrome/plugins.properties:openH264_description2": [
     "codec",
@@ -2406,9 +2415,6 @@
   "dom/chrome/xslt/xslt.properties:31": [
     "template"
   ],
-  "dom/chrome/xslt/xslt.properties:32": [
-    "key"
-  ],
   "dom/chrome/xslt/xslt.properties:8": [
     "NodeSet"
   ],
@@ -2553,11 +2559,7 @@
     "strict"
   ],
   "security/manager/chrome/pipnss/nsserrors.properties:MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE": [
-    "key",
-    "pinning",
-    "pinset",
-    "key",
-    "pinning"
+    "pinset"
   ],
   "security/manager/chrome/pipnss/nsserrors.properties:MOZILLA_PKIX_ERROR_SIGNATURE_ALGORITHM_MISMATCH": [
     "signature",
@@ -2599,9 +2601,6 @@
     "length",
     "constraint"
   ],
-  "security/manager/chrome/pipnss/nsserrors.properties:SEC_ERROR_SAFE_NOT_CREATED": [
-    "safe"
-  ],
   "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_MISSING_EXTENDED_MASTER_SECRET": [
     "correct",
     "extended_master_secret"
@@ -2611,6 +2610,18 @@
     "protocol",
     "negotiation",
     "callback"
+  ],
+  "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_RX_MALFORMED_FINISHED": [
+    "Finished"
+  ],
+  "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_RX_MALFORMED_HELLO_DONE": [
+    "Done"
+  ],
+  "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_RX_UNEXPECTED_FINISHED": [
+    "Finished"
+  ],
+  "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_RX_UNEXPECTED_HELLO_DONE": [
+    "Done"
   ],
   "security/manager/chrome/pipnss/nsserrors.properties:SSL_ERROR_UNEXPECTED_EXTENDED_MASTER_SECRET": [
     "extended_master_secret"
@@ -2949,32 +2960,40 @@
     "other"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.accesskey": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:cmd-preferences.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.accesskey": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.label": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:detail-show-preferences.tooltiptext": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:five-star-rating.title": [
     "rating",
     "maximumFractionDigits"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:preferences": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:preferences-addon-button": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutAddons.ftl:sidebar-preferences-button-title.title": [
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutCompat.ftl:text-disabled-in-about-config": [
     "config"
@@ -3007,9 +3026,6 @@
     "Dispatch",
     "Dispatch"
   ],
-  "toolkit/toolkit/about/aboutPerformance.ftl:preloaded-tab": [
-    "Precaricato"
-  ],
   "toolkit/toolkit/about/aboutPerformance.ftl:type-addon": [
     "Comp"
   ],
@@ -3021,7 +3037,8 @@
   ],
   "toolkit/toolkit/about/aboutProfiles.ftl:profiles-opendir": [
     "macos",
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutRights.ftl:rights-intro": [
     "Source"
@@ -3134,7 +3151,8 @@
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:show-dir-label": [
     "macos",
-    "other"
+    "other",
+    "windows"
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:startup-cache-title": [
     "startup"
@@ -3156,10 +3174,6 @@
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:webgl2-renderer": [
     "Renderer"
-  ],
-  "toolkit/toolkit/about/aboutSupport.ftl:zooming-enabled": [
-    "smooth",
-    "pinch-zoom"
   ],
   "toolkit/toolkit/about/aboutTelemetry.ftl:about-telemetry-addon-details-section": [
     "comp"
