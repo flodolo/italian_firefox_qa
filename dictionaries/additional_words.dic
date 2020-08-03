@@ -6,10 +6,13 @@ alert
 Alert
 Alpenglow
 Android
+antitracciamento
+antivirus
 app
 App
 Application
 Argh
+autofirmato
 binding
 blackbox
 Blackbox
@@ -29,8 +32,10 @@ compositor
 content
 contenteditable
 context
+cookie
 coords
 counter-style
+crash
 crittare
 crittata
 crittate
@@ -65,6 +70,7 @@ Done
 Done
 downgrade
 draft-ietf-httpbis-encryption-encoding-02
+dump
 e10s
 Edge
 Edition
@@ -96,10 +102,12 @@ Firefox
 Flame
 flex
 focusable
+Foundation
 framework
 Gecko
 geolocalizzata
 georilevazione
+GeoTrust
 Ghostery
 Glean
 grid
@@ -113,6 +121,7 @@ hidden
 home
 host
 hosted
+hostname
 html
 HTMLMediaElement
 https
@@ -121,6 +130,7 @@ includeSubDomains
 inline
 inline-block
 integrity
+intersito
 iOS
 iPhone
 JavaScript
@@ -148,6 +158,7 @@ mimetype
 mining
 mozilla
 Mozilla
+Mozilla
 ms
 multicolonna
 multilinea
@@ -171,6 +182,7 @@ picture-in-picture
 Picture-in-Picture
 Pinch
 Pinning
+plugin
 Policies
 policy
 Policy
@@ -190,6 +202,7 @@ push
 Push
 px
 query
+RapidSSL
 raw
 referrer
 Referrer
@@ -232,11 +245,14 @@ stack
 Stack
 Store
 Strict
+Symantec
 Symmetric
+Sync
 table
 tag
 Tag
 tantomeno
+Thawte
 thread
 timestamp
 Timestamp
@@ -255,6 +271,7 @@ type
 Unicode
 upload
 Verify
+VeriSign
 webapp
 WebExtension
 WebGL
