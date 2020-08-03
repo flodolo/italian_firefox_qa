@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
+import configparser
 import os
 import json
 import re
@@ -66,6 +67,17 @@ class CheckStrings():
         self.errors_path = os.path.join(
             script_path, os.path.pardir, 'errors')
         self.repository_path = repository_path.rstrip(os.path.sep)
+
+        # Set up spellcheckers
+        # Load hunspell dictionaries
+        dictionary_path = os.path.join(
+            self.script_path, os.path.pardir, 'dictionaries')
+        self.spellchecker = hunspell.HunSpell(
+            os.path.join(dictionary_path, 'it_IT.dic'),
+            os.path.join(dictionary_path, 'it_IT.aff'),
+        )
+        self.spellchecker.add_dic(
+            os.path.join(dictionary_path, 'additional_words.dic'))
 
         # Extract strings
         self.extractStrings()
@@ -199,27 +211,6 @@ class CheckStrings():
             excluded_files = tuple(exclusions['excluded_files'])
             excluded_strings = exclusions['excluded_strings']
 
-        # Load hunspell dictionaries
-        dictionary_path = os.path.join(
-            self.script_path, os.path.pardir, 'dictionaries')
-        spellchecker = hunspell.HunSpell(
-            os.path.join(dictionary_path, 'it_IT.dic'),
-            os.path.join(dictionary_path, 'it_IT.aff'),
-        )
-        # Add extra dictionary
-        # This doesn't seem to work, so doing a silly workaround for now
-        # https://github.com/blatinier/pyhunspell/issues/73
-        '''
-        spellchecker.add_dic(
-            os.path.join(dictionary_path, 'additional_words.dic'))
-        '''
-        added_words = []
-        with open(os.path.join(dictionary_path, 'additional_words.dic'), 'r') as f:
-            for line in f:
-                l = line.rstrip()
-                spellchecker.add(l)
-                added_words.append(l)
-
         '''
             Remove things that are not errors from the list of exceptions, e.g.
             after a dictionary update.
@@ -227,7 +218,7 @@ class CheckStrings():
         empty_keys = []
         for message_id, errors in exceptions.items():
             for error in errors[:]:
-                if error in added_words or spellchecker.spell(error) or self.excludeToken(error):
+                if self.excludeToken(error) or self.spellchecker.spell(error):
                     errors.remove(error)
                 if errors == []:
                     empty_keys.append(message_id)
@@ -322,7 +313,7 @@ class CheckStrings():
             for token in tokens:
                 if message_id in exceptions and token in exceptions[message_id]:
                     continue
-                if not spellchecker.spell(token):
+                if not self.spellchecker.spell(token):
                     # It's misspelled, but I still need to remove a few outliers
                     if self.excludeToken(token):
                         continue
@@ -358,13 +349,22 @@ class CheckStrings():
                 print('{}: {}'.format(k, misspelled_words[k]))
 
 def main():
+    script_path = os.path.abspath(os.path.dirname(__file__))
+
+    config_file = os.path.join(script_path, os.pardir, 'config', 'config.ini')
+    if not os.path.isfile(config_file):
+        sys.exit('Missing configuration file.')
+    config = configparser.ConfigParser()
+    config.read(config_file)
+    repo_path = config['default']['repo_path']
+    if not os.path.isdir(repo_path):
+        sys.exit('Path to repository in config file is not a directory.')
+
     parser = argparse.ArgumentParser()
-    parser.add_argument('repo_path', help='Path to locale files')
     parser.add_argument('--verbose', action='store_true', help='Verbose output (e.g. tokens')
     args = parser.parse_args()
-    CheckStrings(
-        os.path.abspath(os.path.dirname(__file__)),
-        args.repo_path, args.verbose)
+
+    CheckStrings(script_path, repo_path, args.verbose)
 
 
 if __name__ == '__main__':

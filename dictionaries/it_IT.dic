@@ -30,6 +30,10 @@
 / You should have received a copy of the GNU General Public
 / License along with the "Estensione linguistica italiana - Italian
 / Writing Aids extension"; if not, see <http://www.gnu.org/licenses/>.
+/
+/ Changes from github.com/flodolo
+/ - Added B affix to disconnettere
+/
 a
 ab
 abaco/OTqr
@@ -25926,7 +25930,7 @@ discolpe
 disconnessione/S
 disconnesso/m
 disconnettendo/D
-disconnettere/I
+disconnettere/BI
 disconnetto
 disconnettono
 disconobbe
@@ -95436,24 +95440,3 @@ Zungoli
 zuppiera/Q
 zuppo/o
 Zurigo
-/ Added words
-antivirus
-autofirmato
-Firefox
-Foundation
-GeoTrust
-hostname
-Mozilla
-RapidSSL
-Symantec
-Sync
-Thawte
-VeriSign
-antitracciamento
-cookie
-intersito
-crash
-dump
-plugin
-brandShortName
-brandShorterName
