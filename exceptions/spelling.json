@@ -89,9 +89,11 @@
     "other"
   ],
   "browser/browser/migration.ftl:browser-data-history-checkbox.label": [
+    "firefox",
     "other"
   ],
   "browser/browser/migration.ftl:browser-data-history-label.value": [
+    "firefox",
     "other"
   ],
   "browser/browser/migration.ftl:import-from": [
@@ -799,6 +801,9 @@
     ".xpi",
     ".zip"
   ],
+  "devtools/client/aboutdebugging.properties:addonDebugging.tooltip": [
+    "chrome"
+  ],
   "devtools/client/aboutdebugging.properties:loadTemporaryAddon2": [
     "comp"
   ],
@@ -1150,6 +1155,15 @@
   "devtools/client/netmonitor.properties:networkMenu.summary.tooltip.load": [
     "load"
   ],
+  "devtools/client/performance.dtd:performanceUI.invertFlameGraph": [
+    "Flame"
+  ],
+  "devtools/client/performance.dtd:performanceUI.toolbar.js-flamegraph": [
+    "Flame"
+  ],
+  "devtools/client/performance.dtd:performanceUI.toolbar.memory-flamegraph": [
+    "Flame"
+  ],
   "devtools/client/performance.properties:graphs.fps": [
     "fps"
   ],
@@ -1189,6 +1203,12 @@
   ],
   "devtools/client/storage.properties:tree.labels.indexedDB": [
     "Indexed"
+  ],
+  "devtools/client/toolbox-options.ftl:options-enable-chrome-label": [
+    "chrome"
+  ],
+  "devtools/client/toolbox.dtd:options.enableChrome.label5": [
+    "chrome"
   ],
   "devtools/client/toolbox.properties:toolbox.options.enableNewDebugger.label": [
     "frontend"
@@ -2167,6 +2187,9 @@
   "dom/chrome/layout/layout_errors.properties:ZoomPropertyWarning": [
     "calc",
     "transform-origin"
+  ],
+  "dom/chrome/layout/xbl.properties:CommandNotInChrome": [
+    "chrome"
   ],
   "dom/chrome/layout/xmlparser.properties:24": [
     "entity"
