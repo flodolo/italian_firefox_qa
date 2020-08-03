@@ -1,3 +1,5 @@
+290
+/ Additional dictionary used to spellcheck Italian translation of Firefox
 / Brand names
 Adobe
 Android
@@ -24,7 +26,7 @@ VeriSign
 Windows
 YouTube
 
-/ Mozilla specific brand/feature names
+/ Mozilla specific brand and feature names
 Alpenglow
 DevTools
 Foundation

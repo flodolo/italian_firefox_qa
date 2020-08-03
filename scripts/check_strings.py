@@ -67,6 +67,17 @@ class CheckStrings():
             script_path, os.path.pardir, 'errors')
         self.repository_path = repository_path.rstrip(os.path.sep)
 
+        # Set up spellcheckers
+        # Load hunspell dictionaries
+        dictionary_path = os.path.join(
+            self.script_path, os.path.pardir, 'dictionaries')
+        self.spellchecker = hunspell.HunSpell(
+            os.path.join(dictionary_path, 'it_IT.dic'),
+            os.path.join(dictionary_path, 'it_IT.aff'),
+        )
+        self.spellchecker.add_dic(
+            os.path.join(dictionary_path, 'additional_words.dic'))
+
         # Extract strings
         self.extractStrings()
 
@@ -199,27 +210,6 @@ class CheckStrings():
             excluded_files = tuple(exclusions['excluded_files'])
             excluded_strings = exclusions['excluded_strings']
 
-        # Load hunspell dictionaries
-        dictionary_path = os.path.join(
-            self.script_path, os.path.pardir, 'dictionaries')
-        spellchecker = hunspell.HunSpell(
-            os.path.join(dictionary_path, 'it_IT.dic'),
-            os.path.join(dictionary_path, 'it_IT.aff'),
-        )
-        # Add extra dictionary
-        # This doesn't seem to work, so doing a silly workaround for now
-        # https://github.com/blatinier/pyhunspell/issues/73
-        '''
-        spellchecker.add_dic(
-            os.path.join(dictionary_path, 'additional_words.dic'))
-        '''
-        added_words = []
-        with open(os.path.join(dictionary_path, 'additional_words.dic'), 'r') as f:
-            for line in f:
-                l = line.rstrip()
-                spellchecker.add(l)
-                added_words.append(l)
-
         '''
             Remove things that are not errors from the list of exceptions, e.g.
             after a dictionary update.
@@ -227,7 +217,7 @@ class CheckStrings():
         empty_keys = []
         for message_id, errors in exceptions.items():
             for error in errors[:]:
-                if error in added_words or spellchecker.spell(error) or self.excludeToken(error):
+                if self.excludeToken(error) or self.spellchecker.spell(error):
                     errors.remove(error)
                 if errors == []:
                     empty_keys.append(message_id)
@@ -322,7 +312,7 @@ class CheckStrings():
             for token in tokens:
                 if message_id in exceptions and token in exceptions[message_id]:
                     continue
-                if not spellchecker.spell(token):
+                if not self.spellchecker.spell(token):
                     # It's misspelled, but I still need to remove a few outliers
                     if self.excludeToken(token):
                         continue
