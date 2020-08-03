@@ -1,0 +1,4 @@
+# Copy this file as config.ini and set the path to the local l10n repository.
+# Path to l10n repository
+[default]
+repo_path =

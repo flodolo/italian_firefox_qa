@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
+import configparser
 import os
 import json
 import re
@@ -348,13 +349,22 @@ class CheckStrings():
                 print('{}: {}'.format(k, misspelled_words[k]))
 
 def main():
+    script_path = os.path.abspath(os.path.dirname(__file__))
+
+    config_file = os.path.join(script_path, os.pardir, 'config', 'config.ini')
+    if not os.path.isfile(config_file):
+        sys.exit('Missing configuration file.')
+    config = configparser.ConfigParser()
+    config.read(config_file)
+    repo_path = config['default']['repo_path']
+    if not os.path.isdir(repo_path):
+        sys.exit('Path to repository in config file is not a directory.')
+
     parser = argparse.ArgumentParser()
-    parser.add_argument('repo_path', help='Path to locale files')
     parser.add_argument('--verbose', action='store_true', help='Verbose output (e.g. tokens')
     args = parser.parse_args()
-    CheckStrings(
-        os.path.abspath(os.path.dirname(__file__)),
-        args.repo_path, args.verbose)
+
+    CheckStrings(script_path, repo_path, args.verbose)
 
 
 if __name__ == '__main__':
