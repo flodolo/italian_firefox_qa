@@ -2037,6 +2037,10 @@
   "dom/chrome/layout/htmlparser.properties:errBadStartTagInHead2": [
     "head"
   ],
+  "dom/chrome/layout/htmlparser.properties:errBadStartTagInNoscriptInHead": [
+    "noscript",
+    "head"
+  ],
   "dom/chrome/layout/htmlparser.properties:errEndTagBr": [
     "br"
   ],
