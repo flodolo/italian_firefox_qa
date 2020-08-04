@@ -229,7 +229,7 @@ class CheckStrings():
         with open(exceptions_filename, 'w') as f:
             json.dump(exceptions, f, indent=2, sort_keys=True)
 
-        punctuation = list(string.punctuation) + ['’', '“', '”']
+        punctuation = list(string.punctuation)
         stop_words = nltk.corpus.stopwords.words('italian')
         stop_words += ['quest', 'qualcos']
 
