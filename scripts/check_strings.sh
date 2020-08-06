@@ -23,7 +23,6 @@ function setupVirtualEnv() {
 setupVirtualEnv
 
 # Activate virtualenv
-echo "Activating virtualenv..."
 source $root_path/python-venv/bin/activate || exit 1
 
 # Running main script

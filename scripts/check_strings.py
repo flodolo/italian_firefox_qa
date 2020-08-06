@@ -339,14 +339,20 @@ class CheckStrings():
         with open(os.path.join(self.errors_path, 'spelling.json'), 'w') as f:
             json.dump(all_errors, f, indent=2, sort_keys=True)
 
-        print('\nTotal number of strings with errors: {}'.format(len(all_errors)))
-        print('\nTotal number of errors: {}'.format(total_errors))
+        if total_errors:
+            print('Total number of strings with errors: {}'.format(len(all_errors)))
+            print('Total number of errors: {}'.format(total_errors))
+        else:
+            print('No errors found.')
         # Display mispelled words and their count, if above 4
         threshold = 4
-        print('\nErrors and number of occurrences (only above {}):'.format(threshold))
+        above_threshold = []
         for k in sorted(misspelled_words, key=misspelled_words.get, reverse=True):
             if misspelled_words[k] >= threshold:
-                print('{}: {}'.format(k, misspelled_words[k]))
+                above_threshold.append('{}: {}'.format(k, misspelled_words[k]))
+        if above_threshold:
+            print('Errors and number of occurrences (only above {}):'.format(threshold))
+            print('\n'.join(above_threshold))
 
 def main():
     script_path = os.path.abspath(os.path.dirname(__file__))
