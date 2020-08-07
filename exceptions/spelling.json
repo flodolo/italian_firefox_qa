@@ -992,6 +992,12 @@
   "devtools/client/inspector.properties:markupView.event.tooltiptext": [
     "Listener"
   ],
+  "devtools/client/inspector.properties:markupView.overflowBadge.label": [
+    "overflow"
+  ],
+  "devtools/client/inspector.properties:markupView.overflowBadge.tooltip": [
+    "overflow"
+  ],
   "devtools/client/inspector.properties:markupView.scrollableBadge.tooltip": [
     "overflow"
   ],
@@ -3264,6 +3270,9 @@
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-media-session-api-description": [
     "metadata"
+  ],
+  "toolkit/toolkit/featuregates/features.ftl:experimental-features-print-preview-tab-modal-description": [
+    "macOS"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-web-api-beforeinput-description": [
     "beforeinput",
