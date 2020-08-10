@@ -429,20 +429,11 @@
     "one",
     "other"
   ],
-  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-harmful-page-learn-more": [
-    "phishing"
-  ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-malware-page-learn-more": [
-    "StopBadware.org",
-    "phishing"
+    "StopBadware.org"
   ],
   "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-phishing-page-learn-more": [
-    "phishing",
-    "www.antiphishing.org",
-    "phishing"
-  ],
-  "browser/browser/safebrowsing/blockedSite.ftl:safeb-blocked-unwanted-page-learn-more": [
-    "phishing"
+    "www.antiphishing.org"
   ],
   "browser/browser/screenshots.ftl:screenshots-copy-button-tooltip": [
     "screenshot"
@@ -632,8 +623,7 @@
     "BrandShortName"
   ],
   "browser/installer/custom.properties:REG_APP_DESC": [
-    "BrandShortName",
-    "phishing"
+    "BrandShortName"
   ],
   "browser/installer/custom.properties:STATUS_INSTALL_APP": [
     "BrandShortName"
