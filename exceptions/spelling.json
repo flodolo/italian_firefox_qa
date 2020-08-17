@@ -126,9 +126,6 @@
     "macos",
     "other"
   ],
-  "browser/browser/newtab/onboarding.ftl:onboarding-screenshots-title": [
-    "Screenshot"
-  ],
   "browser/browser/nsserrors.ftl:mozilla-pkix-error-key-pinning-failure": [
     "pinset"
   ],
@@ -342,10 +339,6 @@
     "other",
     "windows"
   ],
-  "browser/browser/preferences/preferences.ftl:pref-page.title": [
-    "other",
-    "windows"
-  ],
   "browser/browser/preferences/preferences.ftl:search-input-box.placeholder": [
     "other",
     "windows"
@@ -457,12 +450,6 @@
   "browser/browser/toolbarContextMenu.ftl:toolbar-context-menu-undo-close-tabs.label": [
     "other"
   ],
-  "browser/chrome/browser/activity-stream/newtab.properties:settings_pane_snippets_header": [
-    "Snippet"
-  ],
-  "browser/chrome/browser/browser.dtd:editBookmark.panel.width": [
-    "28em"
-  ],
   "browser/chrome/browser/browser.dtd:fullScreenCmd.label": [
     "intero\u00ad"
   ],
@@ -471,9 +458,6 @@
   ],
   "browser/chrome/browser/browser.dtd:newNavigatorCmd.label": [
     "finestra\u00ad"
-  ],
-  "browser/chrome/browser/browser.dtd:pluginNotification.width": [
-    "28em"
   ],
   "browser/chrome/browser/browser.properties:addonDownloadingAndVerifying": [
     "comp",
@@ -506,17 +490,9 @@
   "browser/chrome/browser/browser.properties:midi.shareSysexWithSite.message": [
     "SysEx"
   ],
-  "browser/chrome/browser/downloads/downloads.dtd:downloads.width": [
-    "70ch"
-  ],
   "browser/chrome/browser/newInstall.dtd:window.style": [
     "width",
     "490px"
-  ],
-  "browser/chrome/browser/preferences/preferences.properties:portableDocumentFormat": [
-    "Portable",
-    "Document",
-    "Format"
   ],
   "browser/chrome/browser/shellservice.properties:desktopBackgroundLeafNameWin": [
     "desktop.bmp"
@@ -524,14 +500,16 @@
   "browser/chrome/browser/sitePermissions.properties:permission.midi-sysex.label": [
     "SysEx"
   ],
-  "browser/chrome/browser/translation.dtd:translation.options.attribution.yandexTranslate": [
-    "Yandex.Translate"
-  ],
   "browser/chrome/overrides/appstrings.properties:sslv3Used": [
     "SSLv3"
   ],
   "browser/chrome/overrides/netError.dtd:unknownSocketType.longDesc": [
     "Personal"
+  ],
+  "browser/defaultagent/defaultagent_localized.ini:DefaultBrowserAgentTaskDescription": [
+    "default-browser-agent.enabled",
+    "config",
+    "DisableDefaultBrowserAgent"
   ],
   "browser/extensions/formautofill/formautofill.properties:autocompleteFooterOptionOSXShort2": [
     "autom"
@@ -668,10 +646,6 @@
     "BrandShortName",
     "BrandShortName"
   ],
-  "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_LAUNCH": [
-    "BrandShortName",
-    "BrandShortName"
-  ],
   "browser/installer/custom.properties:WARN_MANUALLY_CLOSE_APP_REFRESH": [
     "BrandShortName",
     "BrandShortName"
@@ -780,13 +754,6 @@
   "browser/installer/nsisstrings.properties:STUB_INSTALLING_BODY2": [
     "BrandShortName"
   ],
-  "browser/installer/nsisstrings.properties:STUB_INSTALLING_HEADLINE": [
-    "BrandProductName"
-  ],
-  "browser/installer/nsisstrings.properties:WARN_MANUALLY_CLOSE_APP_LAUNCH": [
-    "BrandShortName",
-    "BrandShortName"
-  ],
   "browser/installer/nsisstrings.properties:WARN_MIN_SUPPORTED_CPU_MSG": [
     "BrandShortName"
   ],
@@ -807,21 +774,6 @@
     "manifest.json",
     ".xpi",
     ".zip"
-  ],
-  "devtools/client/aboutdebugging.properties:addonDebugging.tooltip": [
-    "chrome"
-  ],
-  "devtools/client/aboutdebugging.properties:loadTemporaryAddon2": [
-    "comp"
-  ],
-  "devtools/client/aboutdebugging.properties:multiProcessWarningMessage2": [
-    "dom.ipc.multiOptOut"
-  ],
-  "devtools/client/aboutdebugging.properties:selectAddonFromFile2": [
-    ".xpi"
-  ],
-  "devtools/client/aboutdebugging.properties:webExtTip": [
-    "web-ext"
   ],
   "devtools/client/accessibility.ftl:accessibility-keyboard-issue-mouse-only": [
     "clickable"
@@ -864,29 +816,9 @@
   "devtools/client/animationinspector.properties:player.animationTimingFunctionLabel": [
     "timing"
   ],
-  "devtools/client/app-manager.properties:validator.missIconMarketplace2": [
-    "Marketplace"
-  ],
-  "devtools/client/app-manager.properties:validator.missIconsManifestProperty": [
-    "icons"
-  ],
-  "devtools/client/app-manager.properties:validator.missNameManifestProperty": [
-    "name"
-  ],
-  "devtools/client/app-manager.properties:validator.noCertifiedSupport": [
-    "certified"
-  ],
-  "devtools/client/app-manager.properties:validator.noManifestFile": [
-    "manifest.webapp",
-    "packaged",
-    "manifest.json"
-  ],
   "devtools/client/compatibility.ftl:compatibility-issue-occurrences": [
     "one",
     "other"
-  ],
-  "devtools/client/connection-screen.dtd:availableAddons": [
-    "agg"
   ],
   "devtools/client/debugger.properties:WebIDLTooltip": [
     "WebIDL"
@@ -897,9 +829,6 @@
   "devtools/client/debugger.properties:editor.conditionalPanel.placeholder2": [
     "items.length"
   ],
-  "devtools/client/debugger.properties:eventListenersHeader": [
-    "Listener"
-  ],
   "devtools/client/debugger.properties:eventListenersHeader1": [
     "listener"
   ],
@@ -908,15 +837,6 @@
   ],
   "devtools/client/debugger.properties:frozenTooltip": [
     "frozen"
-  ],
-  "devtools/client/debugger.properties:gamepadEvents": [
-    "Gamepad"
-  ],
-  "devtools/client/debugger.properties:indexedDBEvents": [
-    "IndexedDB"
-  ],
-  "devtools/client/debugger.properties:noEventListenersText": [
-    "listener"
   ],
   "devtools/client/debugger.properties:overriddenTooltip": [
     "override"
@@ -932,9 +852,6 @@
   ],
   "devtools/client/debugger.properties:symbolSearch.searchModifier.regex": [
     "Esp"
-  ],
-  "devtools/client/debugger.properties:watchExpressionsSeparatorLabel2": [
-    "\\u0020\u2192"
   ],
   "devtools/client/debugger.properties:watchpoints.removeWatchpoint": [
     "watchpoint"
@@ -962,18 +879,12 @@
   "devtools/client/inspector.properties:inspectorImageDataUri.label": [
     "Data-URL"
   ],
-  "devtools/client/inspector.properties:markupView.display.flex.tooltiptext": [
-    "flexbox"
-  ],
   "devtools/client/inspector.properties:markupView.display.flex.tooltiptext2": [
     "flexbox",
     "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.flowRoot.tooltiptext": [
     "element"
-  ],
-  "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext": [
-    "flexbox"
   ],
   "devtools/client/inspector.properties:markupView.display.inlineFlex.tooltiptext2": [
     "flexbox",
@@ -999,82 +910,6 @@
   ],
   "devtools/client/markers.properties:marker.field.asyncStack": [
     "Asinc"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.ALLOC_TRIGGER": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.API": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.CC_FORCED": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.CC_WAITING": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.COMPARTMENT_REVIVED": [
-    "dead"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.COMPONENT_UTILS": [
-    "Components.utils.forceGC",
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.DEBUG_GC": [
-    "Zeal"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.DESTROY_RUNTIME": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.DOM_IPC": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.DOM_UTILS": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.EVICT_NURSERY": [
-    "heap"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.FULL_GC_TIMER": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.INCREMENTAL_TOO_SLOW": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.INTER_SLICE_GC": [
-    "slice"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.LAST_DITCH": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.NSJSCONTEXT_DESTROY": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.PERIODIC_FULL_GC": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.SHARED_MEMORY_LIMIT": [
-    "large"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.SHUTDOWN_CC": [
-    "garbage",
-    "collection"
-  ],
-  "devtools/client/markers.properties:marker.gcreason.description.TOO_MUCH_MALLOC": [
-    "garbage",
-    "collection"
   ],
   "devtools/client/markers.properties:marker.gcreason.label.COMPONENT_UTILS": [
     "Cu.forceGC"
@@ -1183,10 +1018,6 @@
   "devtools/client/responsive.properties:responsive.deviceAdderSize": [
     "Dim"
   ],
-  "devtools/client/scratchpad.properties:help.openDocumentationPage": [
-    "en",
-    "Scratchpad"
-  ],
   "devtools/client/shared.properties:dimensions": [
     "\\u00D7"
   ],
@@ -1198,12 +1029,6 @@
   ],
   "devtools/client/sourceeditor.properties:showInformation2.commandkey": [
     "Shift-Ctrl-Space"
-  ],
-  "devtools/client/startup.properties:toolbox.buttons.replay": [
-    "WebReplay"
-  ],
-  "devtools/client/startup.properties:toolbox.buttons.stopReplay": [
-    "WebReplay"
   ],
   "devtools/client/storage.ftl:storage-table-type-cache-hint": [
     "storage"
@@ -1219,12 +1044,6 @@
   ],
   "devtools/client/toolbox-options.ftl:options-enable-chrome-label": [
     "chrome"
-  ],
-  "devtools/client/toolbox.dtd:options.enableChrome.label5": [
-    "chrome"
-  ],
-  "devtools/client/toolbox.properties:toolbox.options.enableNewDebugger.label": [
-    "frontend"
   ],
   "devtools/client/tooltips.ftl:inactive-css-not-display-block-on-floated": [
     "floated"
@@ -1260,20 +1079,11 @@
     "console.warn",
     "console.error"
   ],
-  "devtools/client/webconsole.properties:helperFuncUnsupportedTypeError": [
-    "pprint"
-  ],
   "devtools/client/webconsole.properties:stacktrace.asyncStack": [
     "Asinc"
   ],
   "devtools/client/webconsole.properties:webconsole.confirmDialog.getter.label": [
     "getter"
-  ],
-  "devtools/client/webide.dtd:logs_title": [
-    "pre-packaging"
-  ],
-  "devtools/client/webide.dtd:projectMenu_importPackagedApp_label": [
-    "packaged"
   ],
   "devtools/shared/accessibility.properties:accessibility.keyboard.issue.mouse.only": [
     "clickable"
@@ -1343,9 +1153,6 @@
   "dom/chrome/dom/dom.properties:AllEntryTypesIgnored": [
     "entryTypes"
   ],
-  "dom/chrome/dom/dom.properties:AppCacheInsecureWarning": [
-    "AppCache"
-  ],
   "dom/chrome/dom/dom.properties:AppCacheWarning": [
     "AppCache"
   ],
@@ -1374,16 +1181,9 @@
   "dom/chrome/dom/dom.properties:ComponentsWarning": [
     "Components"
   ],
-  "dom/chrome/dom/dom.properties:ConvolverNodeAllocationError": [
-    "ConvolverNode"
-  ],
   "dom/chrome/dom/dom.properties:CreateImageBitmapCanvasRenderingContext2DWarning": [
     "CanvasRenderingContext2D",
     "createImageBitmap"
-  ],
-  "dom/chrome/dom/dom.properties:DOMQuadBoundsAttrWarning": [
-    "DOMQuad.bounds",
-    "DOMQuad.getBounds"
   ],
   "dom/chrome/dom/dom.properties:DeprecatedTestingAttributeWarning": [
     "TestingDeprecatedInterface.deprecatedAttribute"
@@ -1399,9 +1199,6 @@
   ],
   "dom/chrome/dom/dom.properties:EmptyGetElementByIdParam": [
     "getElementById"
-  ],
-  "dom/chrome/dom/dom.properties:EnablePrivilegeWarning": [
-    "enablePrivilege"
   ],
   "dom/chrome/dom/dom.properties:ExecCommandCutCopyDeniedNotInputDriven": [
     "document.execCommand",
@@ -1435,12 +1232,6 @@
   "dom/chrome/dom/dom.properties:FullscreenExitWindowFocus": [
     "focused"
   ],
-  "dom/chrome/dom/dom.properties:GenericImageNameGIF": [
-    "immagine.gif"
-  ],
-  "dom/chrome/dom/dom.properties:GenericImageNameJPEG": [
-    "immagine.jpeg"
-  ],
   "dom/chrome/dom/dom.properties:GenericImageNamePNG": [
     "immagine.png"
   ],
@@ -1464,10 +1255,6 @@
     "ImageBitmapRenderingContext.transferImageBitmap",
     "ImageBitmapRenderingContext.transferFromImageBitmap"
   ],
-  "dom/chrome/dom/dom.properties:ImplicitMetaViewportTagFallback": [
-    "meta-viewport",
-    "Viewport_meta_tag"
-  ],
   "dom/chrome/dom/dom.properties:IndexedDBTransactionAbortNavigation": [
     "IndexedDB"
   ],
@@ -1479,9 +1266,6 @@
   ],
   "dom/chrome/dom/dom.properties:InterceptionCanceledWithURL": [
     "FetchEvent.preventDefault"
-  ],
-  "dom/chrome/dom/dom.properties:InvalidRedirectChannelWarning": [
-    "nsIWritablePropertyBag2"
   ],
   "dom/chrome/dom/dom.properties:LargeAllocationNonWin32": [
     "Win32"
@@ -1556,9 +1340,6 @@
     "href",
     "actuate"
   ],
-  "dom/chrome/dom/dom.properties:MediaBufferSourceNodeResampleOutOfMemory": [
-    "AudioBufferSourceNode"
-  ],
   "dom/chrome/dom/dom.properties:MediaCannotInitializePulseAudio": [
     "PulseAudio"
   ],
@@ -1591,10 +1372,6 @@
   "dom/chrome/dom/dom.properties:MediaRecorderMultiTracksNotSupported": [
     "MediaRecorder"
   ],
-  "dom/chrome/dom/dom.properties:MediaStreamAddTrackDifferentAudioChannel": [
-    "mediaStreamTrack",
-    "AudioChannel"
-  ],
   "dom/chrome/dom/dom.properties:MediaStreamAudioSourceNodeCrossOrigin": [
     "createMediaStreamSource"
   ],
@@ -1621,10 +1398,6 @@
   "dom/chrome/dom/dom.properties:MouseEvent_MozPressureWarning": [
     "MouseEvent.mozPressure",
     "PointerEvent.pressure"
-  ],
-  "dom/chrome/dom/dom.properties:MozGetAsFileWarning": [
-    "mozGetAsFile",
-    "toBlob"
   ],
   "dom/chrome/dom/dom.properties:MozRequestFullScreenDeprecatedPrefixWarning": [
     "mozRequestFullScreen"
@@ -1729,9 +1502,6 @@
   "dom/chrome/dom/dom.properties:ReadableStreamReadingFailed": [
     "ReadableStream"
   ],
-  "dom/chrome/dom/dom.properties:RegisterProtocolHandlerInsecureWarning": [
-    "registerProtocolHandler"
-  ],
   "dom/chrome/dom/dom.properties:RegisterProtocolHandlerPrivateBrowsingWarning": [
     "registerProtocolHandler"
   ],
@@ -1764,11 +1534,6 @@
   "dom/chrome/dom/dom.properties:ServiceWorkerScopePathMismatch": [
     "Service-Worker-Allowed"
   ],
-  "dom/chrome/dom/dom.properties:ShowModalDialogWarning": [
-    "window.showModalDialog",
-    "window.open",
-    "Window.open"
-  ],
   "dom/chrome/dom/dom.properties:SpeculationFailed": [
     "document.write",
     "Optimizing_Your_Pages_for_Speculative_Parsing"
@@ -1780,12 +1545,6 @@
     "postMessage",
     "DOMWindow"
   ],
-  "dom/chrome/dom/dom.properties:UnexpectedCanvasVariantStyle": [
-    "strokeStyle",
-    "fillStyle",
-    "CanvasGradient",
-    "CanvasPattern"
-  ],
   "dom/chrome/dom/dom.properties:UnsupportedEntryTypesIgnored": [
     "entryTypes"
   ],
@@ -1793,9 +1552,6 @@
     "captureEvents",
     "addEventListener",
     "element.addEventListener"
-  ],
-  "dom/chrome/dom/dom.properties:UseOfDOM3LoadMethodWarning": [
-    "Document.load"
   ],
   "dom/chrome/dom/dom.properties:UseOfReleaseEventsWarning": [
     "releaseEvents",
@@ -1820,10 +1576,6 @@
   "dom/chrome/dom/dom.properties:Window_Cc_ontrollersWarning": [
     "window.controllers",
     "Controllers"
-  ],
-  "dom/chrome/dom/dom.properties:XMLDocumentLoadPrincipalMismatch": [
-    "document.load",
-    ".load"
   ],
   "dom/chrome/global.dtd:locale.dir": [
     "ltr"
@@ -1852,146 +1604,14 @@
     "text",
     "css"
   ],
-  "dom/chrome/layout/css.properties:PEBadDirValue": [
-    "ltr",
-    "rtl"
-  ],
-  "dom/chrome/layout/css.properties:PEBadFontBlockEnd": [
-    "font-face"
-  ],
-  "dom/chrome/layout/css.properties:PEBadFontBlockStart": [
-    "font-face"
-  ],
-  "dom/chrome/layout/css.properties:PECharsetRuleEOF": [
-    "charset"
-  ],
-  "dom/chrome/layout/css.properties:PEColorBadRGBContents": [
-    "rgb"
-  ],
-  "dom/chrome/layout/css.properties:PECounterASWeight": [
-    "additive-symbols"
-  ],
-  "dom/chrome/layout/css.properties:PECounterDescExpected": [
-    "counter"
-  ],
-  "dom/chrome/layout/css.properties:PECounterExtendsNotIdent": [
-    "extends"
-  ],
-  "dom/chrome/layout/css.properties:PEExpectedImportant": [
-    "important"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVBlockStart": [
-    "font-feature-values"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVGenericInFamilyList": [
-    "Family"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVNoFamily": [
-    "family",
-    "font-feature-values"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVUnexpectedBlockEnd": [
-    "font-feature-values"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVUnexpectedEOF": [
-    "font-feature-values"
-  ],
-  "dom/chrome/layout/css.properties:PEFFVUnknownFontVariantPropValue": [
-    "font-variant"
-  ],
-  "dom/chrome/layout/css.properties:PEGatherMediaReservedMediaType": [
-    "keyword"
-  ],
-  "dom/chrome/layout/css.properties:PEGroupRuleEOF2": [
-    "supports",
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEGroupRuleNestedAtRule": [
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEImportantEOF": [
-    "important"
-  ],
   "dom/chrome/layout/css.properties:PEMQExpectedFeatureName": [
-    "name"
-  ],
-  "dom/chrome/layout/css.properties:PEMQExpectedFeatureNameEnd": [
     "name"
   ],
   "dom/chrome/layout/css.properties:PEMQNoMinMaxWithoutValue": [
     "min-"
   ],
-  "dom/chrome/layout/css.properties:PEMoreThanOneGridRepeatAutoFillFitInTrackList": [
-    "repeat",
-    "auto-fill",
-    "repeat",
-    "auto-fit",
-    "name",
-    "track"
-  ],
-  "dom/chrome/layout/css.properties:PEMoreThanOneGridRepeatAutoFillInNameList": [
-    "repeat",
-    "auto-fill",
-    "name",
-    "subgrid"
-  ],
-  "dom/chrome/layout/css.properties:PEMoreThanOneGridRepeatTrackSize": [
-    "track",
-    "size",
-    "repeat",
-    "auto-fit",
-    "auto-fill"
-  ],
-  "dom/chrome/layout/css.properties:PEMozDocRuleBadFunc2": [
-    "url",
-    "url-prefix",
-    "domain",
-    "regexp",
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEMozDocRuleEOF": [
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEMozDocRuleNotString": [
-    "regexp",
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEMozDocRuleNotURI": [
-    "-moz-document"
-  ],
-  "dom/chrome/layout/css.properties:PEPseudoClassNotUserAction": [
-    "action"
-  ],
   "dom/chrome/layout/css.properties:PEPseudoSelEndOrUserActionPC": [
     "action"
-  ],
-  "dom/chrome/layout/css.properties:PEPseudoSelNoUserActionPC": [
-    "action"
-  ],
-  "dom/chrome/layout/css.properties:PESkipAtRuleEOF2": [
-    "at-rule"
-  ],
-  "dom/chrome/layout/css.properties:PESubgridNotSupported": [
-    "subgrid"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsConditionExpectedNot": [
-    "not"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsConditionExpectedStart2": [
-    "not"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsConditionNotEOF": [
-    "not"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsConditionStartEOF2": [
-    "not"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsGroupRuleStart": [
-    "supports"
-  ],
-  "dom/chrome/layout/css.properties:PESupportsWhitespaceRequired": [
-    "not",
-    "and"
   ],
   "dom/chrome/layout/css.properties:PEUnknownAtRule": [
     "at-rule",
@@ -1999,12 +1619,6 @@
   ],
   "dom/chrome/layout/css.properties:PEUnknownFontDesc": [
     "font-face"
-  ],
-  "dom/chrome/layout/css.properties:PEValueWithVariablesFallbackInherit": [
-    "inherit"
-  ],
-  "dom/chrome/layout/css.properties:PEValueWithVariablesFallbackInitial": [
-    "initial"
   ],
   "dom/chrome/layout/css.properties:TooLargeDashedRadius": [
     "100000px",
@@ -2141,10 +1755,6 @@
   "dom/chrome/layout/layout_errors.properties:CompositorAnimationWarningTransformIsBlockedByImportantRules": [
     "important"
   ],
-  "dom/chrome/layout/layout_errors.properties:CompositorAnimationWarningTransformPreserve3D": [
-    "transform-style",
-    "preserve-3d"
-  ],
   "dom/chrome/layout/layout_errors.properties:ForcedLayoutStart": [
     "of",
     "unstyled"
@@ -2198,9 +1808,6 @@
     "calc",
     "transform-origin"
   ],
-  "dom/chrome/layout/xbl.properties:CommandNotInChrome": [
-    "chrome"
-  ],
   "dom/chrome/layout/xmlparser.properties:24": [
     "entity"
   ],
@@ -2215,10 +1822,6 @@
   ],
   "dom/chrome/layout/xmlparser.properties:4": [
     "well-formed"
-  ],
-  "dom/chrome/layout/xul.properties:NeededToWrapXULInlineBox": [
-    "-moz-inline-box",
-    "-moz-inline-box"
   ],
   "dom/chrome/layout/xul.properties:PINotInProlog": [
     "processing",
@@ -2263,16 +1866,8 @@
   "dom/chrome/security/caps.properties:CreateWrapperDeniedForOrigin": [
     "wrapper"
   ],
-  "dom/chrome/security/caps.properties:ProtocolFlagError": [
-    "handler",
-    "nsIProtocolHandler.idl"
-  ],
   "dom/chrome/security/csp.properties:CSPROViolation": [
     "report-only"
-  ],
-  "dom/chrome/security/csp.properties:deprecatedChildSrcDirective": [
-    "worker-src",
-    "frame-src"
   ],
   "dom/chrome/security/csp.properties:ignoreSrcForDirective": [
     "srcs"
@@ -2295,9 +1890,6 @@
   ],
   "dom/chrome/security/csp.properties:reportURInotInReportOnlyHeader": [
     "report-only"
-  ],
-  "dom/chrome/security/csp.properties:scriptFromStringBlocked": [
-    "eval"
   ],
   "dom/chrome/security/csp.properties:strictDynamicButNoHashOrNonce": [
     "strict-dynamic",
@@ -2342,19 +1934,12 @@
   "dom/chrome/security/security.properties:CORSMissingAllowCredentials": [
     "Access-Control-Allow-Credentials"
   ],
-  "dom/chrome/security/security.properties:CORSMissingAllowHeaderFromPreflight": [
-    "Access-Control-Allow-Headers",
-    "preflight"
-  ],
   "dom/chrome/security/security.properties:CORSMissingAllowHeaderFromPreflight2": [
     "Access-Control-Allow-Headers",
     "preflight"
   ],
   "dom/chrome/security/security.properties:CORSOriginHeaderNotAdded": [
     "origin"
-  ],
-  "dom/chrome/security/security.properties:CORSPreflightDidNotSucceed": [
-    "preflight"
   ],
   "dom/chrome/security/security.properties:CORSPreflightDidNotSucceed2": [
     "preflight"
@@ -2371,15 +1956,6 @@
   "dom/chrome/security/security.properties:MimeTypeMismatch2": [
     "X-Content-Type-Options",
     "nosniff"
-  ],
-  "dom/chrome/security/security.properties:PKPInvalidPin": [
-    "pin"
-  ],
-  "dom/chrome/security/security.properties:PKPNoBackupPin": [
-    "pin"
-  ],
-  "dom/chrome/security/security.properties:PKPPinsetDoesNotMatch": [
-    "pin"
   ],
   "dom/chrome/security/security.properties:RestrictBrowserEvalUsage": [
     "eval",
@@ -2418,63 +1994,6 @@
   "dom/chrome/xslt/xslt.properties:8": [
     "NodeSet"
   ],
-  "mobile/android/base/android_strings.dtd:bookmarks_restricted_webmaker": [
-    "Webmaker"
-  ],
-  "mobile/android/base/android_strings.dtd:contextmenu_add_page_shortcut": [
-    "Agg"
-  ],
-  "mobile/android/base/android_strings.dtd:datareporting_notification_ticker_text": [
-    "datareporting_notification_title",
-    "datareporting_notification_action_long"
-  ],
-  "mobile/android/base/android_strings.dtd:firstrun_readerview_subtext": [
-    "\\u2014"
-  ],
-  "mobile/android/base/android_strings.dtd:guest_browsing_notification_title": [
-    "mod"
-  ],
-  "mobile/android/base/android_strings.dtd:home_most_recent_emptyhint2": [
-    "Psst"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_feature_tips_notification_enabling_hint2": [
-    "pref_feature_tips_notification_enabling_path"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_feature_tips_notification_enabling_path": [
-    "pref_category_privacy_short",
-    "pref_category_datareporting",
-    "datareporting_fhr_title"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_media_autoplay_allow": [
-    "riproduz"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_media_autoplay_block": [
-    "riproduz"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_media_autoplay_enabled": [
-    "riproduz"
-  ],
-  "mobile/android/base/android_strings.dtd:pref_use_system_font_size": [
-    "dim"
-  ],
-  "mobile/android/base/android_strings.dtd:pwa_add_to_launcher_badge2": [
-    "Agg"
-  ],
-  "mobile/android/base/android_strings.dtd:pwa_add_to_launcher_confirm": [
-    "Agg"
-  ],
-  "mobile/android/base/android_strings.dtd:remote_tabs_last_synced": [
-    "sinc"
-  ],
-  "mobile/android/base/android_strings.dtd:remote_tabs_never_synced": [
-    "sinc"
-  ],
-  "mobile/android/base/android_strings.dtd:sending_crash_report": [
-    "segnalazione\\u2026"
-  ],
-  "mobile/android/base/sync_strings.dtd:bookmarks.folder.desktop.label": [
-    "pc"
-  ],
   "mobile/android/chrome/about.dtd:aboutPage.checkForUpdates.none": [
     "agg"
   ],
@@ -2483,12 +2002,6 @@
   ],
   "mobile/android/chrome/aboutAddons.properties:addons.browseAll": [
     "comp"
-  ],
-  "mobile/android/chrome/aboutDevices.dtd:aboutDevices.chromecast": [
-    "Chromecast"
-  ],
-  "mobile/android/chrome/aboutDevices.dtd:aboutDevices.roku": [
-    "Roku"
   ],
   "mobile/android/chrome/browser.properties:addonError.titleBlocked": [
     "Comp"
@@ -2523,12 +2036,6 @@
   ],
   "mobile/android/chrome/sync.properties:lastSync2.label": [
     "sinc"
-  ],
-  "mobile/android/chrome/sync.properties:lastSyncInProgress2.label": [
-    "sinc"
-  ],
-  "mobile/android/chrome/sync.properties:promoBanner.message.text": [
-    "mai.\\u0020"
   ],
   "mobile/overrides/appstrings.properties:sslv3Used": [
     "SSLv3"
@@ -2918,12 +2425,6 @@
     "Document",
     "Format"
   ],
-  "toolkit/chrome/mozapps/extensions/blocklist.dtd:blocklist.style": [
-    "width",
-    "45em",
-    "height",
-    "36em"
-  ],
   "toolkit/chrome/mozapps/handling/handling.dtd:window.emHeight": [
     "26em"
   ],
@@ -2933,21 +2434,8 @@
   "toolkit/chrome/mozapps/handling/handling.properties:protocol.checkbox.extra": [
     ".\\u0020"
   ],
-  "toolkit/chrome/mozapps/profile/createProfileWizard.dtd:window.size": [
-    "width",
-    "45em",
-    "height",
-    "33em"
-  ],
-  "toolkit/chrome/mozapps/profile/profileDowngrade.dtd:window.style": [
-    "width",
-    "490px"
-  ],
   "toolkit/chrome/mozapps/update/updates.properties:patchApplyFailure": [
     "patch"
-  ],
-  "toolkit/chrome/mozapps/update/updates.properties:updateNightlyName": [
-    "nightly"
   ],
   "toolkit/chrome/search/search.properties:addEngineAsCurrentText": [
     "ome"
@@ -3011,15 +2499,6 @@
     "Logging"
   ],
   "toolkit/toolkit/about/aboutNetworking.ftl:about-networking-websockets": [
-    "WebSocket"
-  ],
-  "toolkit/toolkit/about/aboutNetworking.ftl:dns-lookup": [
-    "lookup"
-  ],
-  "toolkit/toolkit/about/aboutNetworking.ftl:log-tutorial": [
-    "Logging"
-  ],
-  "toolkit/toolkit/about/aboutNetworking.ftl:websockets": [
     "WebSocket"
   ],
   "toolkit/toolkit/about/aboutPerformance.ftl:item.title": [
@@ -3227,9 +2706,6 @@
   "toolkit/toolkit/about/url-classifier.ftl:url-classifier-title": [
     "Classifier"
   ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-avif-description": [
-    "Image"
-  ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-constructable-stylesheets-description": [
     "CSSStyleSheet",
     "Shadow"
@@ -3245,9 +2721,6 @@
     "Masonry",
     "issue",
     "GitHub"
-  ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-masonry.label": [
-    "Masonry"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-masonry2.label": [
     "Masonry"
@@ -3282,9 +2755,6 @@
     "Preloading",
     "with",
     "rel"
-  ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-web-gpu.label": [
-    "WebGPU"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-web-gpu2.label": [
     "WebGPU"

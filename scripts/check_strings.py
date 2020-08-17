@@ -212,18 +212,25 @@ class CheckStrings():
             excluded_strings = exclusions['excluded_strings']
 
         '''
-            Remove things that are not errors from the list of exceptions, e.g.
-            after a dictionary update.
+            Remove things that are not errors from the list of exceptions,
+            e.g. after a dictionary update, and strings that don't exist
+            anymore.
         '''
-        empty_keys = []
+        keys_to_remove = []
         for message_id, errors in exceptions.items():
-            for error in errors[:]:
-                if self.excludeToken(error) or self.spellchecker.spell(error):
-                    errors.remove(error)
-                if errors == []:
-                    empty_keys.append(message_id)
-        # Remove empty elements after clean-up
-        for id in empty_keys:
+            if message_id not in self.strings:
+                # String doesn't exist anymore
+                keys_to_remove.append(message_id)
+            else:
+                # Check if errors are still valid
+                for error in errors[:]:
+                    if self.excludeToken(error) or self.spellchecker.spell(error):
+                        errors.remove(error)
+                    if errors == []:
+                        keys_to_remove.append(message_id)
+
+        # Remove elements after clean-up
+        for id in keys_to_remove:
             del(exceptions[id])
         # Write back the updated file
         with open(exceptions_filename, 'w') as f:
