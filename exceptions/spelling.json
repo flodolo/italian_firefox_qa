@@ -899,6 +899,10 @@
   "devtools/client/inspector.properties:markupView.overflowBadge.tooltip": [
     "overflow"
   ],
+  "devtools/client/inspector.properties:markupView.scrollableBadge.interactive.tooltip": [
+    "overflow",
+    "overflow"
+  ],
   "devtools/client/inspector.properties:markupView.scrollableBadge.tooltip": [
     "overflow"
   ],
@@ -2420,10 +2424,31 @@
   "toolkit/chrome/mozapps/downloads/downloads.properties:statusFormat3": [
     "sec"
   ],
+  "toolkit/chrome/mozapps/downloads/unknownContentType.properties:avifExtHandlerDescription": [
+    "Image"
+  ],
+  "toolkit/chrome/mozapps/downloads/unknownContentType.properties:pdfExtHandlerDescription": [
+    "Portable",
+    "Document",
+    "Format"
+  ],
   "toolkit/chrome/mozapps/downloads/unknownContentType.properties:pdfHandlerDescription": [
     "Portable",
     "Document",
     "Format"
+  ],
+  "toolkit/chrome/mozapps/downloads/unknownContentType.properties:svgExtHandlerDescription": [
+    "Scalable",
+    "Vector",
+    "Graphics"
+  ],
+  "toolkit/chrome/mozapps/downloads/unknownContentType.properties:webpExtHandlerDescription": [
+    "WebP"
+  ],
+  "toolkit/chrome/mozapps/downloads/unknownContentType.properties:xmlExtHandlerDescription": [
+    "Extensible",
+    "Markup",
+    "Language"
   ],
   "toolkit/chrome/mozapps/handling/handling.dtd:window.emHeight": [
     "26em"
