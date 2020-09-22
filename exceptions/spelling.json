@@ -2,6 +2,17 @@
   "browser/browser/aboutLogins.ftl:about-logins-confirm-export-dialog-message": [
     "Password123"
   ],
+  "browser/browser/aboutLogins.ftl:about-logins-confirm-remove-all-dialog-confirm-button-label": [
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-confirm-remove-all-dialog-title": [
+    "one",
+    "other"
+  ],
+  "browser/browser/aboutLogins.ftl:about-logins-confirm-remove-all-sync-dialog-title": [
+    "one",
+    "other"
+  ],
   "browser/browser/aboutLogins.ftl:about-logins-export-file-picker-csv-filter-title": [
     "macos",
     "other"
@@ -41,6 +52,14 @@
   "browser/browser/branding/sync-brand.ftl:-fxaccount-brand-name": [
     "lowercase",
     "uppercase"
+  ],
+  "browser/browser/browser.ftl:page-action-send-tabs-panel.label": [
+    "one",
+    "other"
+  ],
+  "browser/browser/browser.ftl:page-action-send-tabs-urlbar.tooltiptext": [
+    "one",
+    "other"
   ],
   "browser/browser/browserContext.ftl:navbar-tooltip-instruction.value": [
     "macos",
@@ -105,6 +124,10 @@
   "browser/browser/migration.ftl:import-from": [
     "other",
     "windows"
+  ],
+  "browser/browser/migration.ftl:import-permissions-description": [
+    "macOS",
+    "Bookmarks.plist"
   ],
   "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-rating.tooltiptext": [
     "one",
@@ -311,6 +334,10 @@
   "browser/browser/preferences/preferences.ftl:containers-remove-alert-msg": [
     "one",
     "other"
+  ],
+  "browser/browser/preferences/preferences.ftl:content-blocking-fpi-incompatibility-warning": [
+    "First",
+    "Isolation"
   ],
   "browser/browser/preferences/preferences.ftl:do-not-track-description": [
     "Not",
@@ -1071,6 +1098,12 @@
   "devtools/client/tooltips.ftl:inactive-css-property-is-impossible-to-override-in-visited": [
     "visited"
   ],
+  "devtools/client/tooltips.ftl:inactive-outline-radius-when-outline-style-auto-or-none": [
+    "outline-style"
+  ],
+  "devtools/client/tooltips.ftl:inactive-outline-radius-when-outline-style-auto-or-none-fix": [
+    "outline-style"
+  ],
   "devtools/client/tooltips.ftl:inactive-text-overflow-when-no-overflow": [
     "overflow"
   ],
@@ -1281,6 +1314,10 @@
     "LenientThis",
     "this"
   ],
+  "dom/chrome/dom/dom.properties:LocChangeFloodingPrevented": [
+    "Location",
+    "History"
+  ],
   "dom/chrome/dom/dom.properties:ManifestImageRepeatedPurposes": [
     "purpose"
   ],
@@ -1328,6 +1365,12 @@
   "dom/chrome/dom/dom.properties:MathML_DeprecatedScriptShiftAttributes": [
     "subscriptshift",
     "superscriptshift"
+  ],
+  "dom/chrome/dom/dom.properties:MathML_DeprecatedScriptminsizeAttributeWarning": [
+    "scriptminsize"
+  ],
+  "dom/chrome/dom/dom.properties:MathML_DeprecatedScriptsizemultiplierAttributeWarning": [
+    "scriptsizemultiplier"
   ],
   "dom/chrome/dom/dom.properties:MathML_DeprecatedStixgeneralOperatorStretchingWarning": [
     "stretched",
@@ -2398,6 +2441,9 @@
   "toolkit/chrome/global/aboutWebrtc.properties:n_a": [
     "n.d"
   ],
+  "toolkit/chrome/global/aboutWebrtc.properties:pacer_delay_ms": [
+    "pacer"
+  ],
   "toolkit/chrome/global/aboutWebrtc.properties:peer_connection_id_label": [
     "PeerConnection"
   ],
@@ -2526,6 +2572,9 @@
   "toolkit/toolkit/about/aboutNetworking.ftl:about-networking-dns-lookup": [
     "lookup"
   ],
+  "toolkit/toolkit/about/aboutNetworking.ftl:about-networking-dns-trr-url": [
+    "DoH"
+  ],
   "toolkit/toolkit/about/aboutNetworking.ftl:about-networking-log-tutorial": [
     "Logging"
   ],
@@ -2544,6 +2593,42 @@
   ],
   "toolkit/toolkit/about/aboutPerformance.ftl:type-tracker": [
     "Tracker"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-cpu-user-and-kernel": [
+    "percent",
+    "maximumSignificantDigits",
+    "style",
+    "percent",
+    "total",
+    "maximumFractionDigits"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-cpu-user-and-kernel-idle": [
+    "total",
+    "maximumFractionDigits"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-fork-server-process-name": [
+    "Fork"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-frame-name-many": [
+    "Sottoframe"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-frame-name-one": [
+    "Sottoframe"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-total-memory-size": [
+    "total",
+    "maximumFractionDigits:0",
+    "maximumFractionDigits:0"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:about-processes-total-memory-size-no-change": [
+    "total",
+    "maximumFractionDigits:0"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:duration-unit-ns": [
+    "ns"
+  ],
+  "toolkit/toolkit/about/aboutProcesses.ftl:duration-unit-us": [
+    "\u00b5s"
   ],
   "toolkit/toolkit/about/aboutProfiles.ftl:profiles-opendir": [
     "macos",
@@ -2613,6 +2698,12 @@
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:effective-content-sandbox-level": [
     "process"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:fission-status-disabled-by-default": [
+    "impostaz"
+  ],
+  "toolkit/toolkit/about/aboutSupport.ftl:fission-status-enabled-by-default": [
+    "impostaz"
   ],
   "toolkit/toolkit/about/aboutSupport.ftl:glcontext-crash-guard": [
     "OpenGL"
@@ -2759,11 +2850,14 @@
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-devtools-color-scheme-simulation-description": [
     "prefers-color-scheme"
   ],
+  "toolkit/toolkit/featuregates/features.ftl:experimental-features-js-warp-description": [
+    "Warp"
+  ],
+  "toolkit/toolkit/featuregates/features.ftl:experimental-features-js-warp.label": [
+    "Warp"
+  ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-media-avif-description": [
     "Image"
-  ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-media-session-api-description": [
-    "metadata"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-print-preview-tab-modal-description": [
     "macOS"
@@ -2800,6 +2894,14 @@
   ],
   "toolkit/toolkit/global/createProfileWizard.ftl:profile-creation-explanation-4": [
     "macos",
+    "other"
+  ],
+  "toolkit/toolkit/global/handlerDialog.ftl:chooser-dialog-remember-extra": [
+    "windows",
+    "other"
+  ],
+  "toolkit/toolkit/global/unknownContentType.ftl:unknowncontenttype-settingschange.value": [
+    "windows",
     "other"
   ],
   "toolkit/toolkit/main-window/findbar.ftl:findbar-match-diacritics.tooltiptext": [

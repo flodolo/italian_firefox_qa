@@ -73,4 +73,5 @@ mobile/android/chrome/aboutCertError.dtd:brandDTD
 mobile/android/chrome/aboutLogins.dtd:brandDTD
 mobile/overrides/netError.dtd:brandDTD
 toolkit/chrome/global/videocontrols.dtd:brandDTD
+toolkit/toolkit/about/aboutProcesses.ftl:about-processes-cpu-user-and-kernel
 toolkit/toolkit/featuregates/features.ftl:experimental-features-web-api-link-preload-description

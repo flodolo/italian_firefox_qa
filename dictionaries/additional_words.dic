@@ -1,4 +1,4 @@
-290
+253
 / Additional dictionary used to spellcheck Italian translation of Firefox
 / Brand names
 Adobe
@@ -33,6 +33,7 @@ DevTools
 e10s
 Edition
 Enterprise
+Fission
 Foundation
 Gecko
 Ghostery
@@ -245,6 +246,7 @@ WebExtension
 WebGL
 WebIDE
 WebRTC
+wiki
 worker
 X-Frame-Options
 XMLHttpRequest
