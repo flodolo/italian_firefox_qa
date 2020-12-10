@@ -1,33 +1,50 @@
-253
+257
 / Additional dictionary used to spellcheck Italian translation of Firefox
 / Brand names
 Adobe
+Amazon
 Android
+Apple
+Assembly
 Canary
 Chrome
+Chromebook
 Chromium
+DuckDuckGo
 Edge
 Exchange
 Explorer
 Finder
 Firefox
 GeoTrust
+GitHub
+Gmail
+Hulu
+iCloud
 iOS
 iPhone
 JavaScript
+LinkedIn
+Mac
+macOS
 MathML
 Microsoft
 Mozilla
 RapidSSL
 Symantec
+TestFlight
 Thawte
 Unicode
 VeriSign
+WebVR
+WebXR
 Windows
 YouTube
 
 / Mozilla specific brand and feature names
 Alpenglow
+Bugzilla
+Daylight
 Developer
 DevTools
 e10s
@@ -39,10 +56,16 @@ Gecko
 Ghostery
 Glean
 Lockwise
+Marketplace
 Nightly
 PDF.js
 Picture-in-Picture
 Screenshots
+Hubs
+Rust
+Thunderbird
+WebAssembly
+Webmaker
 
 / Other
 about
@@ -57,6 +80,7 @@ deregistrazione/S
 deuteranomalia
 deuteranopia
 fingerprinter
+foveazione
 geolocalizzata
 georilevazione
 intersito
@@ -107,6 +131,7 @@ compositor
 content
 contenteditable
 context
+controller
 coords
 counter-style
 crash
