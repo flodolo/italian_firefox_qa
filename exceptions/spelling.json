@@ -126,7 +126,6 @@
     "windows"
   ],
   "browser/browser/migration.ftl:import-permissions-description": [
-    "macOS",
     "Bookmarks.plist"
   ],
   "browser/browser/newtab/asrouter.ftl:cfr-doorhanger-extension-rating.tooltiptext": [
@@ -144,6 +143,13 @@
   "browser/browser/newtab/asrouter.ftl:cfr-whatsnew-tracking-blocked-title": [
     "one",
     "other"
+  ],
+  "browser/browser/newtab/newtab.ftl:newtab-custom-row-selector": [
+    "one",
+    "other"
+  ],
+  "browser/browser/newtab/newtab.ftl:newtab-custom-snippets-title": [
+    "Snippet"
   ],
   "browser/browser/newtab/newtab.ftl:newtab-menu-show-file": [
     "macos",
@@ -315,7 +321,6 @@
   ],
   "browser/browser/preferences/preferences.ftl:applications-use-os-default.label": [
     "macos",
-    "macOS",
     "other",
     "windows"
   ],
@@ -543,9 +548,6 @@
   ],
   "browser/extensions/formautofill/formautofill.properties:autocompleteFooterOptionShort2": [
     "autom"
-  ],
-  "browser/extensions/formautofill/formautofill.properties:autofillReauthCheckboxMac": [
-    "macOS"
   ],
   "browser/extensions/formautofill/formautofill.properties:cardExpiresMonth": [
     "Scad"
@@ -2758,6 +2760,9 @@
   "toolkit/toolkit/about/aboutSupport.ftl:startup-cache-title": [
     "startup"
   ],
+  "toolkit/toolkit/about/aboutSupport.ftl:support-third-party-modules-base": [
+    "imagebase"
+  ],
   "toolkit/toolkit/about/aboutSupport.ftl:user-js-description": [
     "user.js"
   ],
@@ -2841,8 +2846,7 @@
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-masonry-description": [
     "Masonry",
-    "issue",
-    "GitHub"
+    "issue"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-css-masonry2.label": [
     "Masonry"
@@ -2858,9 +2862,6 @@
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-media-avif-description": [
     "Image"
-  ],
-  "toolkit/toolkit/featuregates/features.ftl:experimental-features-print-preview-tab-modal-description": [
-    "macOS"
   ],
   "toolkit/toolkit/featuregates/features.ftl:experimental-features-web-api-beforeinput-description": [
     "beforeinput",
