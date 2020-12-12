@@ -158,6 +158,7 @@ end-to-end
 endpoint
 ephemeral
 esc
+extension
 extensions
 fallback
 false
