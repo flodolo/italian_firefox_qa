@@ -1,4 +1,4 @@
 config/config.ini
-data/it_IT.aff
-data/it_IT.dic
+dictionaries/it_IT.aff
+dictionaries/it_IT.dic
 python-venv
