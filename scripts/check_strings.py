@@ -77,7 +77,7 @@ class CheckStrings():
             os.path.join(dictionary_path, 'it_IT.aff'),
         )
         self.spellchecker.add_dic(
-            os.path.join(dictionary_path, 'additional_words.dic'))
+            os.path.join(dictionary_path, 'mozilla_qa_specialized.dic'))
 
         # Extract strings
         self.extractStrings()

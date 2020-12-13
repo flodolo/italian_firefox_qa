@@ -905,9 +905,6 @@
     "transpiled",
     "Babel"
   ],
-  "devtools/client/inspector.properties:inspectorImageDataUri.label": [
-    "Data-URL"
-  ],
   "devtools/client/inspector.properties:markupView.display.flex.tooltiptext2": [
     "flexbox",
     "flexbox"
@@ -1176,12 +1173,6 @@
   ],
   "devtools/shared/styleinspector.properties:rule.flexToggle.tooltip": [
     "flexbox"
-  ],
-  "devtools/shared/styleinspector.properties:styleinspector.contextmenu.copyImageDataUrl": [
-    "Data-URL"
-  ],
-  "devtools/shared/styleinspector.properties:styleinspector.copyImageDataUrlError": [
-    "Data-URL"
   ],
   "dom/chrome/appstrings.properties:sslv3Used": [
     "SSLv3"
