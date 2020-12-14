@@ -159,8 +159,8 @@ class CheckStrings():
         file_name = os.path.join(self.exceptions_path, 'quotes.txt')
         with open(file_name, 'r') as f:
             exceptions = []
-            for l in f:
-                exceptions.append(l.rstrip())
+            for line in f:
+                exceptions.append(line.rstrip())
 
         straight_quotes = re.compile(r'\'|"')
 
@@ -377,6 +377,7 @@ class CheckStrings():
         if above_threshold:
             print('Errors and number of occurrences (only above {}):'.format(threshold))
             print('\n'.join(above_threshold))
+
 
 def main():
     script_path = os.path.abspath(os.path.dirname(__file__))
