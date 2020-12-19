@@ -53,6 +53,15 @@
     "lowercase",
     "uppercase"
   ],
+  "browser/browser/browser.ftl:bookmarks-tools-menu-button-visibility.label": [
+    "other"
+  ],
+  "browser/browser/browser.ftl:bookmarks-tools-sidebar-visibility.label": [
+    "other"
+  ],
+  "browser/browser/browser.ftl:bookmarks-tools-toolbar-visibility.label": [
+    "other"
+  ],
   "browser/browser/browser.ftl:page-action-send-tabs-panel.label": [
     "one",
     "other"

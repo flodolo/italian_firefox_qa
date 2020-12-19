@@ -37,16 +37,6 @@ class MLStripper(HTMLParser):
 
 class CheckStrings:
 
-    excluded_folders = (
-        "calendar",
-        "chat",
-        "editor",
-        "extensions",
-        "mail",
-        "other-licenses",
-        "suite",
-    )
-
     def __init__(self, script_path, repository_path, verbose):
         """Initialize object"""
 
@@ -94,9 +84,6 @@ class CheckStrings:
             file_extension = os.path.splitext(file_path)[1]
             file_name = self.getRelativePath(file_path)
 
-            # Ignore folders unrelated to Firefox Desktop or Fennec
-            if file_name.startswith(self.excluded_folders):
-                continue
             if file_name.endswith("region.properties"):
                 continue
 
@@ -128,7 +115,21 @@ class CheckStrings:
     def extractFileList(self):
         """Extract the list of supported files"""
 
+        excluded_folders = [
+            "calendar",
+            "chat",
+            "editor",
+            "extensions",
+            "mail",
+            "other-licenses",
+            "suite",
+        ]
+
         for root, dirs, files in os.walk(self.repository_path, followlinks=True):
+            # Ignore excluded folders
+            if root == self.repository_path:
+                dirs[:] = [d for d in dirs if d not in excluded_folders]
+
             for f in files:
                 for supported_format in self.supported_formats:
                     if f.endswith(supported_format):
