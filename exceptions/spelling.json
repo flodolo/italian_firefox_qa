@@ -98,9 +98,6 @@
     "macos",
     "other"
   ],
-  "browser/browser/menubar.ftl:menu-file-new-window.label": [
-    "finestra\u00ad"
-  ],
   "browser/browser/menubar.ftl:menu-preferences.accesskey": [
     "other",
     "windows"
@@ -108,9 +105,6 @@
   "browser/browser/menubar.ftl:menu-preferences.label": [
     "other",
     "windows"
-  ],
-  "browser/browser/menubar.ftl:menu-view-full-screen.label": [
-    "intero\u00ad"
   ],
   "browser/browser/migration.ftl:browser-data-bookmarks-checkbox.label": [
     "ie",
@@ -206,10 +200,6 @@
     "path",
     "length",
     "constraint"
-  ],
-  "browser/browser/nsserrors.ftl:sec-internal-only": [
-    "**Modulo",
-    "interno**"
   ],
   "browser/browser/nsserrors.ftl:ssl-error-missing-extended-master-secret": [
     "correct",
@@ -490,15 +480,6 @@
   ],
   "browser/browser/toolbarContextMenu.ftl:toolbar-context-menu-undo-close-tabs.label": [
     "other"
-  ],
-  "browser/chrome/browser/browser.dtd:fullScreenCmd.label": [
-    "intero\u00ad"
-  ],
-  "browser/chrome/browser/browser.dtd:homeButton.label": [
-    "iniziale\u00ad"
-  ],
-  "browser/chrome/browser/browser.dtd:newNavigatorCmd.label": [
-    "finestra\u00ad"
   ],
   "browser/chrome/browser/browser.properties:addonDownloadingAndVerifying": [
     "comp",

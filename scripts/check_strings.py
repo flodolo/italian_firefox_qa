@@ -36,7 +36,6 @@ class MLStripper(HTMLParser):
 
 
 class CheckStrings:
-
     def __init__(self, script_path, repository_path, verbose):
         """Initialize object"""
 
@@ -210,31 +209,6 @@ class CheckStrings:
             excluded_files = tuple(exclusions["excluded_files"])
             excluded_strings = exclusions["excluded_strings"]
 
-        """
-            Remove things that are not errors from the list of exceptions,
-            e.g. after a dictionary update, and strings that don't exist
-            anymore.
-        """
-        keys_to_remove = []
-        for message_id, errors in exceptions.items():
-            if message_id not in self.strings:
-                # String doesn't exist anymore
-                keys_to_remove.append(message_id)
-            else:
-                # Check if errors are still valid
-                for error in errors[:]:
-                    if self.excludeToken(error) or self.spellchecker.spell(error):
-                        errors.remove(error)
-                    if errors == []:
-                        keys_to_remove.append(message_id)
-
-        # Remove elements after clean-up
-        for id in keys_to_remove:
-            del exceptions[id]
-        # Write back the updated file
-        with open(exceptions_filename, "w") as f:
-            json.dump(exceptions, f, indent=2, sort_keys=True)
-
         punctuation = list(string.punctuation)
         stop_words = nltk.corpus.stopwords.words("italian")
 
@@ -268,6 +242,7 @@ class CheckStrings:
         all_errors = {}
         total_errors = 0
         misspelled_words = {}
+        ignored_strings = []
         for message_id, message in self.strings.items():
             filename, extension = os.path.splitext(message_id.split(":")[0])
 
@@ -275,6 +250,8 @@ class CheckStrings:
             if message_id.split(":")[0].startswith(excluded_files):
                 continue
             if message_id in excluded_strings:
+                if message_id not in ignored_strings:
+                    ignored_strings.append(message_id)
                 continue
 
             # Ignore style attributes in fluent messages
@@ -313,6 +290,8 @@ class CheckStrings:
             errors = []
             for i, token in enumerate(tokens):
                 if message_id in exceptions and token in exceptions[message_id]:
+                    if message_id not in ignored_strings:
+                        ignored_strings.append(message_id)
                     continue
 
                 """
@@ -374,6 +353,31 @@ class CheckStrings:
 
         with open(os.path.join(self.errors_path, "spelling.json"), "w") as f:
             json.dump(all_errors, f, indent=2, sort_keys=True)
+
+        # Remove things that are not errors from the list of exceptions.
+        for message_id in list(exceptions.keys()):
+
+            if message_id not in self.strings:
+                # String does not exist anymore
+                del exceptions[message_id]
+                continue
+
+            if message_id not in ignored_strings:
+                # There was no need to ignore the string during check, which
+                # means errors are gone.
+                del exceptions[message_id]
+                continue
+
+            if (
+                message_id in all_errors
+                and all_errors[message_id] != exceptions[message_id]
+            ):
+                # Assume the tokens in exceptions need to be updated
+                exceptions[message_id] = all_errors[message_id]
+
+        # Write back updated exceptions file
+        with open(exceptions_filename, "w") as f:
+            json.dump(exceptions, f, indent=2, sort_keys=True)
 
         if total_errors:
             print("Total number of strings with errors: {}".format(len(all_errors)))
